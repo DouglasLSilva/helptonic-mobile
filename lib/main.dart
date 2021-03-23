@@ -39,10 +39,10 @@ class NavigationBarState extends State<AppCore> {
   FFNavigationBar buildFfNavigationBar() {
     return FFNavigationBar(
       theme: FFNavigationBarTheme(
-        barBackgroundColor: Color(0xFF42294a),
-        selectedItemBorderColor: Color(0xFF42294a),
+        barBackgroundColor: Color(0xFFff3a3a),
+        selectedItemBorderColor: Color(0xFFff3a3a),
         selectedItemBackgroundColor: Colors.white,
-        selectedItemIconColor: Color(0xFF42294a),
+        selectedItemIconColor: Color(0xFFff3a3a),
         selectedItemLabelColor: Colors.white,
         unselectedItemIconColor: Colors.white,
         unselectedItemLabelColor: Colors.white,
@@ -82,7 +82,7 @@ class NavigationBarState extends State<AppCore> {
     setState(() {
       if (photo != null) {
         imagem = File(photo.path);
-        print(imagem);
+        print(imagem.readAsBytes());
       } else {
         print('No image selected.');
       }
@@ -97,6 +97,7 @@ class NavigationBarState extends State<AppCore> {
     );
     if (pickedFile != null) {
       imagem = File(pickedFile.path);
+      print(imagem.readAsBytes());
     } else {
       print('No image selected.');
     }
