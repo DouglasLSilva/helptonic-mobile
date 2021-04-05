@@ -4,8 +4,6 @@
   <br>
 </h1>
 
-<h4 align="center">Helptonic - um jeito de trazer cores ao mundo dos daltônicos</h4>
-
 <p align="center">
   <a href="#functions">Funções</a> •
   <a href="#how-to-use">Tecnologias Utilizadas</a> •
