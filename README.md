@@ -13,10 +13,10 @@
 ## Funções
 
 * Login de Usuário
-  O serviço possui um sistema de cadastro e login para salvar as informações únicas de cada usuário.
+  - O serviço possui um sistema de cadastro e login para salvar as informações únicas de cada usuário.
   
 * Envio de Fotos
-  As fotos podem ser enviadas para análise e retornam com as cores que foram identificadas (ainda não feito)
+  - As fotos podem ser enviadas para análise e retornam com as cores que foram identificadas (ainda não feito)
   
 ## Tecnologias Utilizadas
 
