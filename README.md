@@ -10,7 +10,7 @@
   <a href="#download">Download</a>
 </p>
 
-## Functions
+## Funções
 
 * Login de Usuário
   O serviço possui um sistema de cadastro e login para salvar as informações únicas de cada usuário.
