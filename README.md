@@ -2,9 +2,6 @@
   <br>
   <img alt="Capa" title="#Capa" src=https://github.com/DouglasLSilva/helptonic-mobile/blob/main/banner.png />
   <br>
-  <br>
-  Helptonic
-  <br>
 </h1>
 
 <h4 align="center">Helptonic - um jeito de trazer cores ao mundo dos daltônicos</h4>
