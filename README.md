@@ -1,16 +1,34 @@
-# flutter_ftt
+<h1 align="center">
+  <br>
+  <img alt="Capa" title="#Capa" src="https://github.com/Lacivitaa/Cashee_app/blob/master/cashee.png" />
+  <br>
+  <br>
+  Helptonic
+  <br>
+</h1>
 
-A new Flutter project.
+<h4 align="center">Helptonic - um jeito de trazer cores ao mundo dos daltônicos</h4>
 
-## Getting Started
+<p align="center">
+  <a href="#functions">Funções</a> •
+  <a href="#how-to-use">Tecnologias Utilizadas</a> •
+  <a href="#download">Download</a>
+</p>
 
-This project is a starting point for a Flutter application.
+## Functions
 
-A few resources to get you started if this is your first Flutter project:
+* Login de Usuário
+  O serviço possui um sistema de cadastro e login para salvar as informações únicas de cada usuário.
+  
+* Envio de Fotos
+  As fotos podem ser enviadas para análise e retornam com as cores que foram identificadas (ainda não feito)
+  
+## Tecnologias Utilizadas
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+* NodeJS
+* Flutter
+* Python (Inteligência Artificial)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Download
+
+você pode fazer o download do projeto no seguinte [link](https://github.ibm.com/igor-lacivita/next_architecture_example/archive/master.zip).
