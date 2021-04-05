@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img alt="Capa" title="#Capa" src="https://github.com/Lacivitaa/Cashee_app/blob/master/cashee.png" />
+  <img alt="Capa" title="#Capa" src=https://github.com/DouglasLSilva/helptonic-mobile/blob/main/banner.png />
   <br>
   <br>
   Helptonic
