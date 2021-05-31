@@ -57,7 +57,6 @@ class SingleImagePicker {
         await getPermission.getPermission(context);
 
         if (getPermission.granted == false) {
-          //Permission is not granted
           return;
         }
       } else if (pickImageSource == PickImageSource.gallery) {
@@ -67,7 +66,6 @@ class SingleImagePicker {
         await getPermission.getPermission(context);
 
         if (getPermission.granted == false) {
-          //Permission is not granted
           return;
         }
       } else {
@@ -76,41 +74,17 @@ class SingleImagePicker {
 
       PickedFile image = await imagePicker.getImage(source: imageSource);
 
-     /*  if (image != null) {
-        onImagePicked?.call(image.path);} */
+      UploadFile uploadFile = UploadFile();
+      String urlImage = await uploadFile.call(image);
 
-        /* String fileExtension = path.extension(image.path); */
-
-        /* GenerateImageUrl generateImageUrl = GenerateImageUrl();
-        await generateImageUrl.call(fileExtension);
-
-        String uploadUrl;
-        if (generateImageUrl.isGenerated != null &&
-            generateImageUrl.isGenerated) {
-          uploadUrl = generateImageUrl.uploadUrl;
-        } else {
-          throw generateImageUrl.message;
-        } */
-
-        /* PhotoRepository repository = PhotoRepository();
-        bool isUploaded =
-            await repository.postPhoto(generateImageUrl.downloadUrl);
-        if (!isUploaded) {
-          throw "Failed to upload image";
-        } */
-
-        UploadFile uploadFile = UploadFile();
-        String urlImage = await uploadFile.call(image);
-
-          if (urlImage.isNotEmpty) {
-            UserConst.imageList.add(urlImage);
-            onImageSuccessfullySaved(uploadFile.downloadUrl);
-          } else {
-            throw "Failed to save image";
-          }     
+      if (urlImage.isNotEmpty) {
+        UserConst.imageList.add(urlImage);
+        onImageSuccessfullySaved(uploadFile.downloadUrl);
+      } else {
+        throw "Failed to save image";
+      }
     } catch (e) {
       throw ("Erro no request");
     }
   }
 }
-  

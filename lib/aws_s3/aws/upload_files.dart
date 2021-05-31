@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter_ftt/constant/api_const.dart';
 import 'package:flutter_ftt/constant/user_const.dart';
-import 'package:flutter_ftt/model/photo.dart';
 import 'package:flutter_ftt/repository/photo_repository.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io' as Io;
@@ -40,11 +39,7 @@ class UploadFile {
       }
 
      return downloadUrl;
-      /* Uint8List bytes = await image.readAsBytes();
-      var response = await http.put(url, body: bytes);
-      if (response.statusCode == 200) {
-        isUploaded = true;
-      } */
+     
     } catch (e) {
       throw ('Erro no request');
     }

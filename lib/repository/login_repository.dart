@@ -6,7 +6,6 @@ import 'package:flutter_ftt/model/login.dart';
 import 'package:flutter_ftt/model/user.dart';
 import 'package:flutter_ftt/constant/api_const.dart';
 import 'package:flutter_ftt/constant/user_const.dart';
-import 'package:flutter_ftt/view/widget/single_child.dart';
 
 BuildContext context;
 

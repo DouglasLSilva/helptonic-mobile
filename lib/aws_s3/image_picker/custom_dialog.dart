@@ -16,7 +16,6 @@ class CustomDialog {
     bool isPositiveButtonDangerous = false,
   }) {
     if (Platform.isIOS) {
-      // iOS-specific code
       showCupertinoDialog(
         context: context,
         useRootNavigator: false,
