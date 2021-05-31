@@ -1,0 +1,800 @@
+Info	2021-05-12 20:41:16.395	default_logger_delegate.cpp:150	msedge (17384)	"Logger initialized with format:%level	%datetime{%Y-%M-%d %H:%m:%s.%g}	%fbase:%line	%process	""%msg""	%func	%thread"	mipns::DefaultLoggerDelegate::InitHelper	24424
+Info	2021-05-12 20:41:16.395	default_logger_delegate.cpp:151	msedge (17384)	"Log file:C:\Users\Igor\AppData\Local\Temp\flutter_tools.a276d0e9\flutter_tools_chrome_device.f4c12acf\Default\Sync Data\mip\logs\mip_sdk.miplog"	mipns::DefaultLoggerDelegate::InitHelper	24424
+Info	2021-05-12 20:41:16.395	default_logger_delegate.cpp:152	msedge (17384)	"Machine name: [DESKTOP-VOMJPD0], User name: [Igor]"	mipns::DefaultLoggerDelegate::InitHelper	24424
+Info	2021-05-12 20:41:16.396	mip_context_impl.cpp:73	msedge (17384)	"Loading context for application: [Microsoft Edge], Application version: [90.0.818.56], Application ID: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Process name: [msedge], MIP SDK version: [1.6.152], Path: [C:\Users\Igor\AppData\Local\Temp\flutter_tools.a276d0e9\flutter_tools_chrome_device.f4c12acf\Default\Sync Data\mip]"	mipns::MipContextImpl::MipContextImpl	24424
+Warning	2021-05-12 20:41:16.397	telemetry_factory.cpp:211	msedge (17384)	"Telemetry has been programmatically disabled"	mipns::CreateDefaultTelemetryDelegate	24424
+Info	2021-05-12 20:41:16.399	protection_profile_impl.cpp:47	msedge (17384)	"Starting API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	24424
+Info	2021-05-12 20:41:16.399	protection_profile_impl.cpp:43	msedge (17384)	"Loading protection profile. EUL caching state: [1]"	mipns::PreInitializeProtection::<lambda_1726414a495749f5d1f3049550f8d8e8>::operator ()	24424
+Info	2021-05-12 20:41:16.399	protection_profile_impl.cpp:47	msedge (17384)	"Ended API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	24424
+Info	2021-05-12 20:41:16.399	protection_profile_impl.cpp:127	msedge (17384)	"Starting API call: protection_profile_load"	mipns::ProtectionProfile::Load	24424
+Info	2021-05-12 20:41:16.406	storage_manager.cpp:60	msedge (17384)	"StorageManager configured to use in-memory caching."	mipns::StorageManager::StorageManager	24424
+Info	2021-05-12 20:41:16.406	storage_manager.cpp:69	msedge (17384)	"Protection storage path: :memory:"	mipns::StorageManager::StorageManager	24424
+Info	2021-05-12 20:41:16.406	protection_profile_impl.cpp:149	msedge (17384)	"Protection API configured to use default HttpDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	24424
+Info	2021-05-12 20:41:16.406	protection_profile_impl.cpp:155	msedge (17384)	"Protection API configured to use default TaskDispatcherDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	24424
+Info	2021-05-12 20:41:16.406	protection_profile_impl.cpp:127	msedge (17384)	"Ended API call: protection_profile_load"	mipns::ProtectionProfile::Load	24424
+Info	2021-05-12 20:41:16.406	protection_profile_impl.cpp:251	msedge (17384)	"Starting API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	24424
+Info	2021-05-12 20:41:16.406	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [mip_context_create]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	Event.Duration: [0.0080379], Pii: [None]
+	Event.UniqueId: [c994911d-b743-46df-8534-cfc4d98b0303], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Telemetry.CustomSettings: [is_all_telemetry_disabled:true ], Pii: [None]
+	Telemetry.IsFastShutdownEnabled: [false], Pii: [None]
+	Telemetry.IsLocalCachingEnabled: [true], Pii: [None]
+	Telemetry.IsNetworkDetectionEnabled: [true], Pii: [None]
+	Telemetry.IsOptedOut: [false], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:16.406	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [protection_profile_pre_initialize]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [7d047717-78ff-44d9-8fc0-dc8e0c557bca], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.0003553], Pii: [None]
+	Event.UniqueId: [e43e9ff9-d1ad-4ebd-afe8-ca49a3d1e0e2], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:16.406	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [protection_profile_load]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [7d047717-78ff-44d9-8fc0-dc8e0c557bca], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.0067659], Pii: [None]
+	Event.UniqueId: [b3bbb43c-f52e-4e1f-b240-41bf7ed1bbda], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:16.406	protection_engine_manager.cpp:49	msedge (17384)	"Adding engine with ID 637a27f3-7353-470f-bef4-ddde0d82ce9a"	mipns::ProtectionEngineManager::AddEngine	24424
+Info	2021-05-12 20:41:16.407	protection_profile_impl.cpp:251	msedge (17384)	"Ended API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	24424
+Info	2021-05-12 20:41:16.407	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [protection_profile_add_engine]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [7d047717-78ff-44d9-8fc0-dc8e0c557bca], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.CreatedObjectCorrelationId: [eae033aa-c088-4a6f-a882-83301b532b09], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [0.0004713], Pii: [None]
+	Event.UniqueId: [66bd16f9-32bc-4de6-9584-9ce89b66262e], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:16.407	protection_engine_impl.cpp:476	msedge (17384)	"Starting API call: protection_engine_create_publishing_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForPublishing	24424
+Info	2021-05-12 20:41:16.407	protection_engine_impl.cpp:476	msedge (17384)	"Starting API task: protection_engine_create_publishing_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForPublishing	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:151	msedge (17384)	"Using cloud endpoint base url domain 'https://api.aadrm.com' for service discovery"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:174	msedge (17384)	"No cached DNS entry found"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:207	msedge (17384)	"Service Details Domain: https://api.aadrm.com"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:208	msedge (17384)	"Service Details DNS-resolved URL: https://api.aadrm.com"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:218	msedge (17384)	"Service Details Endpoint Type: Azure RMS"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	24424
+Info	2021-05-12 20:41:16.407	service_discovery_helper.cpp:227	msedge (17384)	"Service discovery disabled. Using default service URLs"	mipns::ServiceDiscoveryHelper::FindCachedServiceDiscoveryDetails	24424
+Info	2021-05-12 20:41:16.409	protection_http_provider.cpp:36	msedge (17384)	"https://api.aadrm.com/my/v2/publishinglicenses is auto-approved and requires no user consent."	mipns::ProtectionHttpProvider::RequestUserConsent	24424
+Info	2021-05-12 20:41:16.409	auth_info_store.cpp:76	msedge (17384)	"Failed to find OAuth2 challenge in cache. Domain: api.aadrm.com IssuerId: ''"	mipns::AuthInfoStore::FindChallenge	24424
+Info	2021-05-12 20:41:16.411	auth_request_transformer.cpp:48	msedge (17384)	"Failed to get auth token from cached auth header. Failed with: [InternalError: 'Cannot parse empty auth header or request URL']"	mipns::AuthRequestTransformer::TransformRequestPriorToInitialSend	24424
+Info	2021-05-12 20:41:16.411	http_director_impl.cpp:118	msedge (17384)	"Sending HTTP request: ID: 6e924f9f-fc53-4682-b581-75cb52ce737a;dcd09609-b67d-4d4a-84a3-6c20c5e50306, Type: POST, Url: https://api.aadrm.com/my/v2/publishinglicenses, Body Size: 219, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.56;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	24424
+Info	2021-05-12 20:41:16.644	http_client_base.cpp:45	msedge (17384)	"HTTP response time (seconds): 0.231826 ID: 6e924f9f-fc53-4682-b581-75cb52ce737a;dcd09609-b67d-4d4a-84a3-6c20c5e50306"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	11064
+Info	2021-05-12 20:41:16.644	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [a8b60fa7-c91d-49d6-96ce-2ac549cae1db], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.232173], Pii: [None]
+	Event.ParentCorrelationId: [eae033aa-c088-4a6f-a882-83301b532b09], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [6145ca18-a39d-41e4-b39b-e987bfafa3ac], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [6e924f9f-fc53-4682-b581-75cb52ce737a;dcd09609-b67d-4d4a-84a3-6c20c5e50306], Pii: [None]
+	Request.HttpStatusCode: [401], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [219], Pii: [None]
+	Request.ResponseBodySize: [61], Pii: [None]
+	Request.TokenTenantId: [], Pii: [None]
+	Request.TokenUserObjectId: [], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/publishinglicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:16.644	http_director_impl.cpp:36	msedge (17384)	"Received HTTP response: ID: 6e924f9f-fc53-4682-b581-75cb52ce737a;dcd09609-b67d-4d4a-84a3-6c20c5e50306, Status: 401, Time: 2021-05-12T23:41:16Z, Body: {""Message"":""Authorization has been denied for this request.""}, Headers['Date'] = 'Wed, 12 May 2021 23:41:14 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: 1E77535C84C841C1BBAE061461E63C5A Ref B: CPQ02EDGE0122 Ref C: 2021-05-12T23:41:14Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '6e924f9f-fc53-4682-b581-75cb52ce737a', Headers['Content-Length'] = '61', Headers['WWW-Authenticate'] = 'Bearer resource=""https://aadrm.com"", realm="""", authorization=""https://login.windows.net/common/oauth2/authorize""', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '6e924f9f-fc53-4682-b581-75cb52ce737a', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	24424
+Info	2021-05-12 20:41:16.644	auth_request_transformer.cpp:155	msedge (17384)	"Requesting auth token from app. Resource: 'https://aadrm.com', Authority: 'https://login.windows.net/common', Scope: '', Claims: ''"	mipns::AuthRequestTransformer::GetAuthToken	24424
+Info	2021-05-12 20:41:16.644	auth_request_transformer.cpp:169	msedge (17384)	"Authentication response time (seconds): 3.24e-05"	mipns::AuthRequestTransformer::GetAuthToken	24424
+Info	2021-05-12 20:41:16.644	http_director_impl.cpp:118	msedge (17384)	"Sending HTTP request: ID: 23b71726-9f82-47b9-b107-f4ad2c026ca3;7c14a22a-dfdb-477d-baba-14d824c84c09, Type: POST, Url: https://api.aadrm.com/my/v2/publishinglicenses, Body Size: 219, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Authorization'] = 'Name:IGOR LACIVITA DE GÓES ORTIZ;UOID:e375a5b0-3aa5-4713-81da-0e538c345e6f;Tenant:ee60b2a1-d713-4227-b536-a9f245482a87;Audience:https://aadrm.com;Scopes:user_impersonation;', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-request-id'] = '6e924f9f-fc53-4682-b581-75cb52ce737a;dcd09609-b67d-4d4a-84a3-6c20c5e50306', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.56;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	24424
+Info	2021-05-12 20:41:17.321	http_client_base.cpp:45	msedge (17384)	"HTTP response time (seconds): 0.676733 ID: 23b71726-9f82-47b9-b107-f4ad2c026ca3;7c14a22a-dfdb-477d-baba-14d824c84c09"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	11064
+Info	2021-05-12 20:41:17.321	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [a8b60fa7-c91d-49d6-96ce-2ac549cae1db], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.676914], Pii: [None]
+	Event.ParentCorrelationId: [eae033aa-c088-4a6f-a882-83301b532b09], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [f79eb471-75de-4de0-b52b-a5198fe376ce], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [23b71726-9f82-47b9-b107-f4ad2c026ca3;7c14a22a-dfdb-477d-baba-14d824c84c09], Pii: [None]
+	Request.HttpStatusCode: [200], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [219], Pii: [None]
+	Request.ResponseBodySize: [10027], Pii: [None]
+	Request.TokenTenantId: [ee60b2a1-d713-4227-b536-a9f245482a87], Pii: [None]
+	Request.TokenUserObjectId: [e375a5b0-3aa5-4713-81da-0e538c345e6f], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/publishinglicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:17.321	http_director_impl.cpp:36	msedge (17384)	"Received HTTP response: ID: 23b71726-9f82-47b9-b107-f4ad2c026ca3;7c14a22a-dfdb-477d-baba-14d824c84c09, Status: 200, Time: 2021-05-12T23:41:17Z, Body: SCRUBBED, Headers['Date'] = 'Wed, 12 May 2021 23:41:14 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: A5C6939E464A46038E03A5CC77FCE8DA Ref B: CPQ02EDGE0222 Ref C: 2021-05-12T23:41:15Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '23b71726-9f82-47b9-b107-f4ad2c026ca3', Headers['Content-Length'] = '10027', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '23b71726-9f82-47b9-b107-f4ad2c026ca3', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	24424
+Info	2021-05-12 20:41:17.321	auth_info_store.cpp:46	msedge (17384)	"Adding OAuth2 challenge to cache. Domain: api.aadrm.com IssuerId: '' Challenge: 'Bearer resource=""https://aadrm.com"", realm="""", authorization=""https://login.windows.net/common/oauth2/authorize""'"	mipns::AuthInfoStore::AddChallenge	24424
+Info	2021-05-12 20:41:17.322	publish_client.cpp:131	msedge (17384)	"Publish response (custom): Id: 00000000-0000-0000-0000-000000000000, Name: , Description: , Referrer: , Owner: 082170035@ftt.cefsa.edu.br, ContentId: 04df08a6-6f81-4fe4-9d91-0a88925e2241, LicenseSize: 7229, JsonPreLicenseSize: 0, XmlPreLicenseSize: 0, KeySize: 32, KeyCipherMode: MICROSOFT.CBC4K, KeyAlgorithm: AES"	mipns::PublishClient::GetRestResponseFromHttpResponse	24424
+Info	2021-05-12 20:41:17.322	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [publish_custom]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [eae033aa-c088-4a6f-a882-83301b532b09], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [7.11e-05], Pii: [None]
+	Event.ParentCorrelationId: [7d047717-78ff-44d9-8fc0-dc8e0c557bca], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [1129e30a-7408-4449-9802-e4f56959bd0d], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	PL.KeyType: [Single], Pii: [None]
+	Response.ContentId: [04df08a6-6f81-4fe4-9d91-0a88925e2241], Pii: [None]
+	Response.Id: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.JsonPreLicenseSize: [0], Pii: [None]
+	Response.KeyAlgorithm: [AES], Pii: [None]
+	Response.KeyCipherMode: [MICROSOFT.CBC4K], Pii: [None]
+	Response.KeySize: [32], Pii: [None]
+	Response.LicenseSize: [7229], Pii: [None]
+	Response.Name: [], Pii: [None]
+	Response.XmlPreLicenseSize: [0], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:17.322	common/api_utils.h:203	msedge (17384)	"Start calling success callback for API: protection_engine_create_publishing_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_9b9637f9e8567c71aebcf83457419a02>::operator ()	24424
+Info	2021-05-12 20:41:17.329	common/api_utils.h:205	msedge (17384)	"Ended calling success callback for API: protection_engine_create_publishing_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_9b9637f9e8567c71aebcf83457419a02>::operator ()	24424
+Info	2021-05-12 20:41:17.329	telemetry_utils.cpp:66	msedge (17384)	"Send Telemetry. Event Name : [protection_engine_create_publishing_protection_handler]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [eae033aa-c088-4a6f-a882-83301b532b09], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.CreatedObjectCorrelationId: [acec4f0e-a1c0-411d-82f2-389e859750d2], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionHandler], Pii: [None]
+	Event.Duration: [0.922069], Pii: [None]
+	Event.ParentCorrelationId: [7d047717-78ff-44d9-8fc0-dc8e0c557bca], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [b4400b51-0e70-4cb4-b23e-64b38a96a65d], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	24424
+Info	2021-05-12 20:41:17.329	protection_engine_impl.cpp:476	msedge (17384)	"Ended API call: protection_engine_create_publishing_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForPublishing	24424
+Info	2021-05-12 20:41:17.330	protection_handler_impl.cpp:267	msedge (17384)	" +ProtectionHandlerImpl::EncryptBuffer"	mipns::ProtectionHandlerImpl::EncryptBuffer	24424
+Info	2021-05-12 20:41:17.331	protection_handler_impl.cpp:279	msedge (17384)	" -ProtectionHandlerImpl::EncryptBuffer"	mipns::ProtectionHandlerImpl::EncryptBuffer	24424
+Info	2021-05-12 20:46:39.466	default_logger_delegate.cpp:150	msedge (4056)	"Logger initialized with format:%level	%datetime{%Y-%M-%d %H:%m:%s.%g}	%fbase:%line	%process	""%msg""	%func	%thread"	mipns::DefaultLoggerDelegate::InitHelper	23744
+Info	2021-05-12 20:46:39.466	default_logger_delegate.cpp:151	msedge (4056)	"Log file:C:\Users\Igor\AppData\Local\Temp\flutter_tools.a6ab9758\flutter_tools_chrome_device.a3e21c3a\Default\Sync Data\mip\logs\mip_sdk.miplog"	mipns::DefaultLoggerDelegate::InitHelper	23744
+Info	2021-05-12 20:46:39.466	default_logger_delegate.cpp:152	msedge (4056)	"Machine name: [DESKTOP-VOMJPD0], User name: [Igor]"	mipns::DefaultLoggerDelegate::InitHelper	23744
+Info	2021-05-12 20:46:39.466	mip_context_impl.cpp:73	msedge (4056)	"Loading context for application: [Microsoft Edge], Application version: [90.0.818.56], Application ID: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Process name: [msedge], MIP SDK version: [1.6.152], Path: [C:\Users\Igor\AppData\Local\Temp\flutter_tools.a6ab9758\flutter_tools_chrome_device.a3e21c3a\Default\Sync Data\mip]"	mipns::MipContextImpl::MipContextImpl	23744
+Warning	2021-05-12 20:46:39.466	telemetry_factory.cpp:211	msedge (4056)	"Telemetry has been programmatically disabled"	mipns::CreateDefaultTelemetryDelegate	23744
+Info	2021-05-12 20:46:39.466	protection_profile_impl.cpp:47	msedge (4056)	"Starting API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	23744
+Info	2021-05-12 20:46:39.466	protection_profile_impl.cpp:43	msedge (4056)	"Loading protection profile. EUL caching state: [1]"	mipns::PreInitializeProtection::<lambda_1726414a495749f5d1f3049550f8d8e8>::operator ()	23744
+Info	2021-05-12 20:46:39.466	protection_profile_impl.cpp:47	msedge (4056)	"Ended API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	23744
+Info	2021-05-12 20:46:39.466	protection_profile_impl.cpp:127	msedge (4056)	"Starting API call: protection_profile_load"	mipns::ProtectionProfile::Load	23744
+Info	2021-05-12 20:46:39.467	storage_manager.cpp:60	msedge (4056)	"StorageManager configured to use in-memory caching."	mipns::StorageManager::StorageManager	23744
+Info	2021-05-12 20:46:39.467	storage_manager.cpp:69	msedge (4056)	"Protection storage path: :memory:"	mipns::StorageManager::StorageManager	23744
+Info	2021-05-12 20:46:39.467	protection_profile_impl.cpp:149	msedge (4056)	"Protection API configured to use default HttpDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	23744
+Info	2021-05-12 20:46:39.467	protection_profile_impl.cpp:155	msedge (4056)	"Protection API configured to use default TaskDispatcherDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	23744
+Info	2021-05-12 20:46:39.467	protection_profile_impl.cpp:127	msedge (4056)	"Ended API call: protection_profile_load"	mipns::ProtectionProfile::Load	23744
+Info	2021-05-12 20:46:39.467	protection_profile_impl.cpp:251	msedge (4056)	"Starting API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	23744
+Info	2021-05-12 20:46:39.467	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [mip_context_create]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	Event.Duration: [0.0026321], Pii: [None]
+	Event.UniqueId: [55fe9af1-e3da-4b62-b459-62960fcb8f90], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Telemetry.CustomSettings: [is_all_telemetry_disabled:true ], Pii: [None]
+	Telemetry.IsFastShutdownEnabled: [false], Pii: [None]
+	Telemetry.IsLocalCachingEnabled: [true], Pii: [None]
+	Telemetry.IsNetworkDetectionEnabled: [true], Pii: [None]
+	Telemetry.IsOptedOut: [false], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:39.467	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [protection_profile_pre_initialize]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [0348e56a-b160-4644-814d-9f4823b8b72c], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [6.87e-05], Pii: [None]
+	Event.UniqueId: [8e191234-e2ab-4a5e-b4fc-804b9fabe9c1], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:39.467	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [protection_profile_load]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [0348e56a-b160-4644-814d-9f4823b8b72c], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.0010511], Pii: [None]
+	Event.UniqueId: [d7b2ba68-87eb-4644-881c-7954c06ffbcf], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:39.467	protection_engine_manager.cpp:49	msedge (4056)	"Adding engine with ID a53c1533-4174-4b85-9c22-22a891103029"	mipns::ProtectionEngineManager::AddEngine	23744
+Info	2021-05-12 20:46:39.467	protection_profile_impl.cpp:251	msedge (4056)	"Ended API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	23744
+Info	2021-05-12 20:46:39.467	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [protection_profile_add_engine]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [0348e56a-b160-4644-814d-9f4823b8b72c], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.CreatedObjectCorrelationId: [5e4a0f9f-0377-4f3b-9f90-7dd0f1789e26], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [0.0002784], Pii: [None]
+	Event.UniqueId: [ae356947-7180-4278-87f0-b5cbcdd42a90], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:39.479	protection_engine_impl.cpp:691	msedge (4056)	"Starting API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	23744
+Info	2021-05-12 20:46:39.479	protection_engine_impl.cpp:691	msedge (4056)	"Starting API task: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	23744
+Info	2021-05-12 20:46:39.480	usage_restrictions_client.cpp:137	msedge (4056)	"Searching for cached usage restrictions response"	mipns::UsageRestrictionsClient::FindCachedRestResponse	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:145	msedge (4056)	"Using publishing license domains for service discovery"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:174	msedge (4056)	"No cached DNS entry found"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:207	msedge (4056)	"Service Details Domain: https://481401b3-2464-46e6-b1dc-7e3b6d4c7bdb.rms.sa.aadrm.com/_wmcs/licensing"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:208	msedge (4056)	"Service Details DNS-resolved URL: https://api.aadrm.com"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:218	msedge (4056)	"Service Details Endpoint Type: Azure RMS"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	23744
+Info	2021-05-12 20:46:39.480	service_discovery_helper.cpp:227	msedge (4056)	"Service discovery disabled. Using default service URLs"	mipns::ServiceDiscoveryHelper::FindCachedServiceDiscoveryDetails	23744
+Info	2021-05-12 20:46:39.480	protection_http_provider.cpp:36	msedge (4056)	"https://api.aadrm.com/my/v2/enduserlicenses is auto-approved and requires no user consent."	mipns::ProtectionHttpProvider::RequestUserConsent	23744
+Info	2021-05-12 20:46:39.480	auth_info_store.cpp:76	msedge (4056)	"Failed to find OAuth2 challenge in cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75'"	mipns::AuthInfoStore::FindChallenge	23744
+Info	2021-05-12 20:46:39.480	auth_request_transformer.cpp:48	msedge (4056)	"Failed to get auth token from cached auth header. Failed with: [InternalError: 'Cannot parse empty auth header or request URL']"	mipns::AuthRequestTransformer::TransformRequestPriorToInitialSend	23744
+Info	2021-05-12 20:46:39.480	http_director_impl.cpp:118	msedge (4056)	"Sending HTTP request: ID: 6eff2826-bd18-44fb-83d8-d5630fc8008b;ce17fa4d-f5af-4d71-80dd-330e435bce5e, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.56;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	23744
+Info	2021-05-12 20:46:40.057	http_client_base.cpp:45	msedge (4056)	"HTTP response time (seconds): 0.577082 ID: 6eff2826-bd18-44fb-83d8-d5630fc8008b;ce17fa4d-f5af-4d71-80dd-330e435bce5e"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	15744
+Info	2021-05-12 20:46:40.057	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [88a02f24-6dd5-4a8c-a249-da2c05d1f406], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.577249], Pii: [None]
+	Event.ParentCorrelationId: [5e4a0f9f-0377-4f3b-9f90-7dd0f1789e26], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [633cae68-78c8-4d10-9096-2d6f492047a0], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [6eff2826-bd18-44fb-83d8-d5630fc8008b;ce17fa4d-f5af-4d71-80dd-330e435bce5e], Pii: [None]
+	Request.HttpStatusCode: [401], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [61], Pii: [None]
+	Request.TokenTenantId: [], Pii: [None]
+	Request.TokenUserObjectId: [], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:40.057	http_director_impl.cpp:36	msedge (4056)	"Received HTTP response: ID: 6eff2826-bd18-44fb-83d8-d5630fc8008b;ce17fa4d-f5af-4d71-80dd-330e435bce5e, Status: 401, Time: 2021-05-12T23:46:40Z, Body: {""Message"":""Authorization has been denied for this request.""}, Headers['Date'] = 'Wed, 12 May 2021 23:46:38 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: 293DC1158ADE4E29B9A4949E08E88946 Ref B: CPQ02EDGE0506 Ref C: 2021-05-12T23:46:37Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '6eff2826-bd18-44fb-83d8-d5630fc8008b', Headers['Content-Length'] = '61', Headers['WWW-Authenticate'] = 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '6eff2826-bd18-44fb-83d8-d5630fc8008b', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	23744
+Info	2021-05-12 20:46:40.057	auth_request_transformer.cpp:155	msedge (4056)	"Requesting auth token from app. Resource: 'https://aadrm.com', Authority: 'https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87', Scope: 'ee60b2a1-d713-4227-b536-a9f245482a87', Claims: ''"	mipns::AuthRequestTransformer::GetAuthToken	23744
+Info	2021-05-12 20:46:40.057	auth_request_transformer.cpp:169	msedge (4056)	"Authentication response time (seconds): 2.93e-05"	mipns::AuthRequestTransformer::GetAuthToken	23744
+Info	2021-05-12 20:46:40.058	http_director_impl.cpp:118	msedge (4056)	"Sending HTTP request: ID: 07be3fa2-12bc-42e3-9977-45ffaabbbe77;3e05406d-db84-451e-9ba7-937f4507c50d, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Authorization'] = 'Name:IGOR LACIVITA DE GÓES ORTIZ;UOID:e375a5b0-3aa5-4713-81da-0e538c345e6f;Tenant:ee60b2a1-d713-4227-b536-a9f245482a87;Audience:https://aadrm.com;Scopes:user_impersonation;', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-request-id'] = '6eff2826-bd18-44fb-83d8-d5630fc8008b;ce17fa4d-f5af-4d71-80dd-330e435bce5e', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.56;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	23744
+Info	2021-05-12 20:46:40.592	http_client_base.cpp:45	msedge (4056)	"HTTP response time (seconds): 0.534108 ID: 07be3fa2-12bc-42e3-9977-45ffaabbbe77;3e05406d-db84-451e-9ba7-937f4507c50d"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	22560
+Info	2021-05-12 20:46:40.592	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [88a02f24-6dd5-4a8c-a249-da2c05d1f406], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.534336], Pii: [None]
+	Event.ParentCorrelationId: [5e4a0f9f-0377-4f3b-9f90-7dd0f1789e26], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [6a6c0f4f-f3f8-4dcb-b86b-c83fa66c4cdd], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [07be3fa2-12bc-42e3-9977-45ffaabbbe77;3e05406d-db84-451e-9ba7-937f4507c50d], Pii: [None]
+	Request.HttpStatusCode: [200], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [1020], Pii: [None]
+	Request.TokenTenantId: [ee60b2a1-d713-4227-b536-a9f245482a87], Pii: [None]
+	Request.TokenUserObjectId: [e375a5b0-3aa5-4713-81da-0e538c345e6f], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:40.592	http_director_impl.cpp:36	msedge (4056)	"Received HTTP response: ID: 07be3fa2-12bc-42e3-9977-45ffaabbbe77;3e05406d-db84-451e-9ba7-937f4507c50d, Status: 200, Time: 2021-05-12T23:46:40Z, Body: SCRUBBED, Headers['Date'] = 'Wed, 12 May 2021 23:46:38 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: D7705FA35E3A4563B09BD1B9249BE0DF Ref B: CPQ02EDGE0406 Ref C: 2021-05-12T23:46:38Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '07be3fa2-12bc-42e3-9977-45ffaabbbe77', Headers['Content-Length'] = '1020', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '07be3fa2-12bc-42e3-9977-45ffaabbbe77', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	23744
+Info	2021-05-12 20:46:40.592	auth_info_store.cpp:46	msedge (4056)	"Adding OAuth2 challenge to cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75' Challenge: 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""'"	mipns::AuthInfoStore::AddChallenge	23744
+Info	2021-05-12 20:46:40.593	usage_restrictions_client.cpp:234	msedge (4056)	"Examining a usage restrictions response:AccessStatus: AccessGrantedTemplateId: 00000000-0000-0000-0000-000000000000Name: Restricted AccessReferrer: Owner: 082170035@ftt.cefsa.edu.brCipherMode: MICROSOFT.CBC4KAllowOfflineAccess: 0LicenseValidUntil: 2021-05-12T23:46:38ZContentId: 04df08a6-6f81-4fe4-9d91-0a88925e2241LabelId: 00000000-0000-0000-0000-000000000000FromTemplate: 0"	mipns::ValidateAndLogLicenseResponse	23744
+Info	2021-05-12 20:46:40.593	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [protection_policy_acquire]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [5e4a0f9f-0377-4f3b-9f90-7dd0f1789e26], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [4.96e-05], Pii: [None]
+	Event.ParentCorrelationId: [0348e56a-b160-4644-814d-9f4823b8b72c], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [c1aa5d0a-c59e-4901-b6dd-f3c896b896d0], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Response.AccessStatus: [AccessGranted], Pii: [None]
+	Response.ContentId: [04df08a6-6f81-4fe4-9d91-0a88925e2241], Pii: [None]
+	Response.KeyAlgorithm: [AES], Pii: [None]
+	Response.KeyCipherMode: [MICROSOFT.CBC4K], Pii: [None]
+	Response.KeySize: [32], Pii: [None]
+	Response.LabelId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.TemplateId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.Type: [EndUserLicense], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:40.593	common/api_utils.h:203	msedge (4056)	"Start calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	23744
+Info	2021-05-12 20:46:40.593	common/api_utils.h:205	msedge (4056)	"Ended calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	23744
+Info	2021-05-12 20:46:40.593	telemetry_utils.cpp:66	msedge (4056)	"Send Telemetry. Event Name : [protection_engine_create_consuming_protection_handler]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.56], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [5e4a0f9f-0377-4f3b-9f90-7dd0f1789e26], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.CreatedObjectCorrelationId: [374de1c4-b23f-4c48-845d-9f511eb87959], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionHandler], Pii: [None]
+	Event.Duration: [1.11332], Pii: [None]
+	Event.ParentCorrelationId: [0348e56a-b160-4644-814d-9f4823b8b72c], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [be5baf91-e6be-4fce-8c4e-244ece3c8b2a], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	PL.KeyType: [Single], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	23744
+Info	2021-05-12 20:46:40.593	protection_engine_impl.cpp:691	msedge (4056)	"Ended API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	23744
+Info	2021-05-12 20:46:40.593	protection_handler_impl.cpp:290	msedge (4056)	" +ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	23744
+Info	2021-05-12 20:46:40.593	protection_handler_impl.cpp:302	msedge (4056)	" -ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	23744
+Info	2021-05-15 19:36:24.108	default_logger_delegate.cpp:150	msedge (9584)	"Logger initialized with format:%level	%datetime{%Y-%M-%d %H:%m:%s.%g}	%fbase:%line	%process	""%msg""	%func	%thread"	mipns::DefaultLoggerDelegate::InitHelper	18984
+Info	2021-05-15 19:36:24.109	default_logger_delegate.cpp:151	msedge (9584)	"Log file:C:\Users\Igor\AppData\Local\Temp\flutter_tools.19b2454e\flutter_tools_chrome_device.b1a885b1\Default\Sync Data\mip\logs\mip_sdk.miplog"	mipns::DefaultLoggerDelegate::InitHelper	18984
+Info	2021-05-15 19:36:24.109	default_logger_delegate.cpp:152	msedge (9584)	"Machine name: [DESKTOP-VOMJPD0], User name: [Igor]"	mipns::DefaultLoggerDelegate::InitHelper	18984
+Info	2021-05-15 19:36:24.109	mip_context_impl.cpp:73	msedge (9584)	"Loading context for application: [Microsoft Edge], Application version: [90.0.818.62], Application ID: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Process name: [msedge], MIP SDK version: [1.6.152], Path: [C:\Users\Igor\AppData\Local\Temp\flutter_tools.19b2454e\flutter_tools_chrome_device.b1a885b1\Default\Sync Data\mip]"	mipns::MipContextImpl::MipContextImpl	18984
+Warning	2021-05-15 19:36:24.110	telemetry_factory.cpp:211	msedge (9584)	"Telemetry has been programmatically disabled"	mipns::CreateDefaultTelemetryDelegate	18984
+Info	2021-05-15 19:36:24.112	protection_profile_impl.cpp:47	msedge (9584)	"Starting API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	18984
+Info	2021-05-15 19:36:24.112	protection_profile_impl.cpp:43	msedge (9584)	"Loading protection profile. EUL caching state: [1]"	mipns::PreInitializeProtection::<lambda_1726414a495749f5d1f3049550f8d8e8>::operator ()	18984
+Info	2021-05-15 19:36:24.112	protection_profile_impl.cpp:47	msedge (9584)	"Ended API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	18984
+Info	2021-05-15 19:36:24.112	protection_profile_impl.cpp:127	msedge (9584)	"Starting API call: protection_profile_load"	mipns::ProtectionProfile::Load	18984
+Info	2021-05-15 19:36:24.118	storage_manager.cpp:60	msedge (9584)	"StorageManager configured to use in-memory caching."	mipns::StorageManager::StorageManager	18984
+Info	2021-05-15 19:36:24.118	storage_manager.cpp:69	msedge (9584)	"Protection storage path: :memory:"	mipns::StorageManager::StorageManager	18984
+Info	2021-05-15 19:36:24.118	protection_profile_impl.cpp:149	msedge (9584)	"Protection API configured to use default HttpDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	18984
+Info	2021-05-15 19:36:24.118	protection_profile_impl.cpp:155	msedge (9584)	"Protection API configured to use default TaskDispatcherDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	18984
+Info	2021-05-15 19:36:24.118	protection_profile_impl.cpp:127	msedge (9584)	"Ended API call: protection_profile_load"	mipns::ProtectionProfile::Load	18984
+Info	2021-05-15 19:36:24.118	protection_profile_impl.cpp:251	msedge (9584)	"Starting API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	18984
+Info	2021-05-15 19:36:24.118	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [mip_context_create]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	Event.Duration: [0.0072461], Pii: [None]
+	Event.UniqueId: [ffba8e04-7686-4543-bf35-88fa6500c6b1], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Telemetry.CustomSettings: [is_all_telemetry_disabled:true ], Pii: [None]
+	Telemetry.IsFastShutdownEnabled: [false], Pii: [None]
+	Telemetry.IsLocalCachingEnabled: [true], Pii: [None]
+	Telemetry.IsNetworkDetectionEnabled: [true], Pii: [None]
+	Telemetry.IsOptedOut: [false], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:24.118	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [protection_profile_pre_initialize]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [4bdef6a1-51aa-4109-b6e1-6c8f11d6efa5], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.00029], Pii: [None]
+	Event.UniqueId: [84ceff50-044a-44e6-ac53-e61d897dc70f], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:24.118	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [protection_profile_load]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [4bdef6a1-51aa-4109-b6e1-6c8f11d6efa5], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.0058483], Pii: [None]
+	Event.UniqueId: [44578ed0-118c-4280-a494-6f805afb6928], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:24.118	protection_engine_manager.cpp:49	msedge (9584)	"Adding engine with ID 93769614-8c28-4f58-84db-e694783759d6"	mipns::ProtectionEngineManager::AddEngine	18984
+Info	2021-05-15 19:36:24.118	protection_profile_impl.cpp:251	msedge (9584)	"Ended API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	18984
+Info	2021-05-15 19:36:24.118	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [protection_profile_add_engine]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [4bdef6a1-51aa-4109-b6e1-6c8f11d6efa5], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.CreatedObjectCorrelationId: [7c4a861a-369f-4778-8928-def906396490], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [0.0004089], Pii: [None]
+	Event.UniqueId: [5aa93b5d-4455-4210-9776-315f76e601fd], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:24.124	protection_engine_impl.cpp:691	msedge (9584)	"Starting API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	18984
+Info	2021-05-15 19:36:24.124	protection_engine_impl.cpp:691	msedge (9584)	"Starting API task: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	18984
+Info	2021-05-15 19:36:24.124	usage_restrictions_client.cpp:137	msedge (9584)	"Searching for cached usage restrictions response"	mipns::UsageRestrictionsClient::FindCachedRestResponse	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:145	msedge (9584)	"Using publishing license domains for service discovery"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:174	msedge (9584)	"No cached DNS entry found"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:207	msedge (9584)	"Service Details Domain: https://481401b3-2464-46e6-b1dc-7e3b6d4c7bdb.rms.sa.aadrm.com/_wmcs/licensing"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:208	msedge (9584)	"Service Details DNS-resolved URL: https://api.aadrm.com"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:218	msedge (9584)	"Service Details Endpoint Type: Azure RMS"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	18984
+Info	2021-05-15 19:36:24.125	service_discovery_helper.cpp:227	msedge (9584)	"Service discovery disabled. Using default service URLs"	mipns::ServiceDiscoveryHelper::FindCachedServiceDiscoveryDetails	18984
+Info	2021-05-15 19:36:24.126	protection_http_provider.cpp:36	msedge (9584)	"https://api.aadrm.com/my/v2/enduserlicenses is auto-approved and requires no user consent."	mipns::ProtectionHttpProvider::RequestUserConsent	18984
+Info	2021-05-15 19:36:24.126	auth_info_store.cpp:76	msedge (9584)	"Failed to find OAuth2 challenge in cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75'"	mipns::AuthInfoStore::FindChallenge	18984
+Info	2021-05-15 19:36:24.128	auth_request_transformer.cpp:48	msedge (9584)	"Failed to get auth token from cached auth header. Failed with: [InternalError: 'Cannot parse empty auth header or request URL']"	mipns::AuthRequestTransformer::TransformRequestPriorToInitialSend	18984
+Info	2021-05-15 19:36:24.128	http_director_impl.cpp:118	msedge (9584)	"Sending HTTP request: ID: b72f6419-5c99-414d-a417-6fcb33946276;d83efdf6-152a-4763-8583-ce4a8978c156, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.62;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	18984
+Info	2021-05-15 19:36:24.444	http_client_base.cpp:45	msedge (9584)	"HTTP response time (seconds): 0.315641 ID: b72f6419-5c99-414d-a417-6fcb33946276;d83efdf6-152a-4763-8583-ce4a8978c156"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	17060
+Info	2021-05-15 19:36:24.444	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [a4e6fd49-d6be-4f83-ae7b-b4111af601c5], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.315941], Pii: [None]
+	Event.ParentCorrelationId: [7c4a861a-369f-4778-8928-def906396490], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [c9a97ba0-15a6-48a7-86e4-d8d851110ab1], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [b72f6419-5c99-414d-a417-6fcb33946276;d83efdf6-152a-4763-8583-ce4a8978c156], Pii: [None]
+	Request.HttpStatusCode: [401], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [61], Pii: [None]
+	Request.TokenTenantId: [], Pii: [None]
+	Request.TokenUserObjectId: [], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:24.444	http_director_impl.cpp:36	msedge (9584)	"Received HTTP response: ID: b72f6419-5c99-414d-a417-6fcb33946276;d83efdf6-152a-4763-8583-ce4a8978c156, Status: 401, Time: 2021-05-15T22:36:24Z, Body: {""Message"":""Authorization has been denied for this request.""}, Headers['Date'] = 'Sat, 15 May 2021 22:36:23 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: 8C163399A06840BD88679F7D76911BE5 Ref B: CPQ02EDGE0717 Ref C: 2021-05-15T22:36:23Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = 'b72f6419-5c99-414d-a417-6fcb33946276', Headers['Content-Length'] = '61', Headers['WWW-Authenticate'] = 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = 'b72f6419-5c99-414d-a417-6fcb33946276', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	18984
+Info	2021-05-15 19:36:24.444	auth_request_transformer.cpp:155	msedge (9584)	"Requesting auth token from app. Resource: 'https://aadrm.com', Authority: 'https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87', Scope: 'ee60b2a1-d713-4227-b536-a9f245482a87', Claims: ''"	mipns::AuthRequestTransformer::GetAuthToken	18984
+Info	2021-05-15 19:36:24.444	auth_request_transformer.cpp:169	msedge (9584)	"Authentication response time (seconds): 3.16e-05"	mipns::AuthRequestTransformer::GetAuthToken	18984
+Info	2021-05-15 19:36:24.444	http_director_impl.cpp:118	msedge (9584)	"Sending HTTP request: ID: 3793cde4-bf01-4008-ad4d-3098f30307d5;0c567d11-91e5-4ec6-a323-0bd574a395ac, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Authorization'] = 'Name:IGOR LACIVITA DE GÓES ORTIZ;UOID:e375a5b0-3aa5-4713-81da-0e538c345e6f;Tenant:ee60b2a1-d713-4227-b536-a9f245482a87;Audience:https://aadrm.com;Scopes:user_impersonation;', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-request-id'] = 'b72f6419-5c99-414d-a417-6fcb33946276;d83efdf6-152a-4763-8583-ce4a8978c156', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.62;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	18984
+Info	2021-05-15 19:36:25.167	http_client_base.cpp:45	msedge (9584)	"HTTP response time (seconds): 0.722779 ID: 3793cde4-bf01-4008-ad4d-3098f30307d5;0c567d11-91e5-4ec6-a323-0bd574a395ac"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	20336
+Info	2021-05-15 19:36:25.167	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [a4e6fd49-d6be-4f83-ae7b-b4111af601c5], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.722952], Pii: [None]
+	Event.ParentCorrelationId: [7c4a861a-369f-4778-8928-def906396490], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [cb593c58-0c08-4554-bce5-04a0d7a8a5fc], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [3793cde4-bf01-4008-ad4d-3098f30307d5;0c567d11-91e5-4ec6-a323-0bd574a395ac], Pii: [None]
+	Request.HttpStatusCode: [200], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [1020], Pii: [None]
+	Request.TokenTenantId: [ee60b2a1-d713-4227-b536-a9f245482a87], Pii: [None]
+	Request.TokenUserObjectId: [e375a5b0-3aa5-4713-81da-0e538c345e6f], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:25.168	http_director_impl.cpp:36	msedge (9584)	"Received HTTP response: ID: 3793cde4-bf01-4008-ad4d-3098f30307d5;0c567d11-91e5-4ec6-a323-0bd574a395ac, Status: 200, Time: 2021-05-15T22:36:25Z, Body: SCRUBBED, Headers['Date'] = 'Sat, 15 May 2021 22:36:24 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: D2FE24F6C10547E394690C9FD6C13731 Ref B: CPQ02EDGE0712 Ref C: 2021-05-15T22:36:24Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '3793cde4-bf01-4008-ad4d-3098f30307d5', Headers['Content-Length'] = '1020', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '3793cde4-bf01-4008-ad4d-3098f30307d5', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	18984
+Info	2021-05-15 19:36:25.168	auth_info_store.cpp:46	msedge (9584)	"Adding OAuth2 challenge to cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75' Challenge: 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""'"	mipns::AuthInfoStore::AddChallenge	18984
+Info	2021-05-15 19:36:25.168	usage_restrictions_client.cpp:234	msedge (9584)	"Examining a usage restrictions response:AccessStatus: AccessGrantedTemplateId: 00000000-0000-0000-0000-000000000000Name: Restricted AccessReferrer: Owner: 082170035@ftt.cefsa.edu.brCipherMode: MICROSOFT.CBC4KAllowOfflineAccess: 0LicenseValidUntil: 2021-05-15T22:36:24ZContentId: 04df08a6-6f81-4fe4-9d91-0a88925e2241LabelId: 00000000-0000-0000-0000-000000000000FromTemplate: 0"	mipns::ValidateAndLogLicenseResponse	18984
+Info	2021-05-15 19:36:25.168	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [protection_policy_acquire]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [7c4a861a-369f-4778-8928-def906396490], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [4.7e-05], Pii: [None]
+	Event.ParentCorrelationId: [4bdef6a1-51aa-4109-b6e1-6c8f11d6efa5], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [b9059af5-5b68-4069-8f6e-ba612fdd9de9], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Response.AccessStatus: [AccessGranted], Pii: [None]
+	Response.ContentId: [04df08a6-6f81-4fe4-9d91-0a88925e2241], Pii: [None]
+	Response.KeyAlgorithm: [AES], Pii: [None]
+	Response.KeyCipherMode: [MICROSOFT.CBC4K], Pii: [None]
+	Response.KeySize: [32], Pii: [None]
+	Response.LabelId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.TemplateId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.Type: [EndUserLicense], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:25.168	common/api_utils.h:203	msedge (9584)	"Start calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	18984
+Info	2021-05-15 19:36:25.168	common/api_utils.h:205	msedge (9584)	"Ended calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	18984
+Info	2021-05-15 19:36:25.168	telemetry_utils.cpp:66	msedge (9584)	"Send Telemetry. Event Name : [protection_engine_create_consuming_protection_handler]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [7c4a861a-369f-4778-8928-def906396490], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.CreatedObjectCorrelationId: [8a426456-0978-4ba1-b7c9-09030703ca3a], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionHandler], Pii: [None]
+	Event.Duration: [1.04428], Pii: [None]
+	Event.ParentCorrelationId: [4bdef6a1-51aa-4109-b6e1-6c8f11d6efa5], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [988ccbe7-95c4-4173-ac66-95ad3ac09c20], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	PL.KeyType: [Single], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	18984
+Info	2021-05-15 19:36:25.168	protection_engine_impl.cpp:691	msedge (9584)	"Ended API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	18984
+Info	2021-05-15 19:36:25.169	protection_handler_impl.cpp:290	msedge (9584)	" +ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	18984
+Info	2021-05-15 19:36:25.170	protection_handler_impl.cpp:302	msedge (9584)	" -ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	18984
+Info	2021-05-15 20:30:46.355	default_logger_delegate.cpp:150	msedge (1612)	"Logger initialized with format:%level	%datetime{%Y-%M-%d %H:%m:%s.%g}	%fbase:%line	%process	""%msg""	%func	%thread"	mipns::DefaultLoggerDelegate::InitHelper	10332
+Info	2021-05-15 20:30:46.355	default_logger_delegate.cpp:151	msedge (1612)	"Log file:C:\Users\Igor\AppData\Local\Temp\flutter_tools.679897d3\flutter_tools_chrome_device.927d8ca3\Default\Sync Data\mip\logs\mip_sdk.miplog"	mipns::DefaultLoggerDelegate::InitHelper	10332
+Info	2021-05-15 20:30:46.355	default_logger_delegate.cpp:152	msedge (1612)	"Machine name: [DESKTOP-VOMJPD0], User name: [Igor]"	mipns::DefaultLoggerDelegate::InitHelper	10332
+Info	2021-05-15 20:30:46.355	mip_context_impl.cpp:73	msedge (1612)	"Loading context for application: [Microsoft Edge], Application version: [90.0.818.62], Application ID: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Process name: [msedge], MIP SDK version: [1.6.152], Path: [C:\Users\Igor\AppData\Local\Temp\flutter_tools.679897d3\flutter_tools_chrome_device.927d8ca3\Default\Sync Data\mip]"	mipns::MipContextImpl::MipContextImpl	10332
+Warning	2021-05-15 20:30:46.355	telemetry_factory.cpp:211	msedge (1612)	"Telemetry has been programmatically disabled"	mipns::CreateDefaultTelemetryDelegate	10332
+Info	2021-05-15 20:30:46.355	protection_profile_impl.cpp:47	msedge (1612)	"Starting API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	10332
+Info	2021-05-15 20:30:46.355	protection_profile_impl.cpp:43	msedge (1612)	"Loading protection profile. EUL caching state: [1]"	mipns::PreInitializeProtection::<lambda_1726414a495749f5d1f3049550f8d8e8>::operator ()	10332
+Info	2021-05-15 20:30:46.355	protection_profile_impl.cpp:47	msedge (1612)	"Ended API call: protection_profile_pre_initialize"	mipns::PreInitializeProtection	10332
+Info	2021-05-15 20:30:46.355	protection_profile_impl.cpp:127	msedge (1612)	"Starting API call: protection_profile_load"	mipns::ProtectionProfile::Load	10332
+Info	2021-05-15 20:30:46.356	storage_manager.cpp:60	msedge (1612)	"StorageManager configured to use in-memory caching."	mipns::StorageManager::StorageManager	10332
+Info	2021-05-15 20:30:46.356	storage_manager.cpp:69	msedge (1612)	"Protection storage path: :memory:"	mipns::StorageManager::StorageManager	10332
+Info	2021-05-15 20:30:46.356	protection_profile_impl.cpp:149	msedge (1612)	"Protection API configured to use default HttpDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	10332
+Info	2021-05-15 20:30:46.356	protection_profile_impl.cpp:155	msedge (1612)	"Protection API configured to use default TaskDispatcherDelegate"	mipns::ProtectionProfileImpl::ProtectionProfileImpl	10332
+Info	2021-05-15 20:30:46.356	protection_profile_impl.cpp:127	msedge (1612)	"Ended API call: protection_profile_load"	mipns::ProtectionProfile::Load	10332
+Info	2021-05-15 20:30:46.356	protection_profile_impl.cpp:251	msedge (1612)	"Starting API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	10332
+Info	2021-05-15 20:30:46.356	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [mip_context_create]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	Event.Duration: [0.0025536], Pii: [None]
+	Event.UniqueId: [65d0590b-2c61-416e-b65e-5d01b7d8bdca], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Telemetry.CustomSettings: [is_all_telemetry_disabled:true ], Pii: [None]
+	Telemetry.IsFastShutdownEnabled: [false], Pii: [None]
+	Telemetry.IsLocalCachingEnabled: [true], Pii: [None]
+	Telemetry.IsNetworkDetectionEnabled: [true], Pii: [None]
+	Telemetry.IsOptedOut: [false], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:46.356	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [protection_profile_pre_initialize]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [d226dc1a-a302-4d83-87d9-9f2c7e401fa1], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [6.58e-05], Pii: [None]
+	Event.UniqueId: [100a00c9-ba8a-4a06-9cc1-112d9d00beb2], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:46.356	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [protection_profile_load]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Event.CorrelationId: [d226dc1a-a302-4d83-87d9-9f2c7e401fa1], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.Duration: [0.0009816], Pii: [None]
+	Event.UniqueId: [0c636dce-f530-4b8a-8a24-bc9e44a7e4ed], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:46.356	protection_engine_manager.cpp:49	msedge (1612)	"Adding engine with ID 15d9ae90-4bd7-4baa-b4c5-67cf21226188"	mipns::ProtectionEngineManager::AddEngine	10332
+Info	2021-05-15 20:30:46.356	protection_profile_impl.cpp:251	msedge (1612)	"Ended API call: protection_profile_add_engine"	mipns::ProtectionProfileImpl::AddEngine	10332
+Info	2021-05-15 20:30:46.356	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [protection_profile_add_engine]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [d226dc1a-a302-4d83-87d9-9f2c7e401fa1], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.CreatedObjectCorrelationId: [13e754c3-f8fb-4d28-9eca-9249c1c5ed10], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [0.0002993], Pii: [None]
+	Event.UniqueId: [03b33e0d-9c44-46db-ae06-1be280128efd], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:46.357	protection_engine_impl.cpp:691	msedge (1612)	"Starting API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	10332
+Info	2021-05-15 20:30:46.357	protection_engine_impl.cpp:691	msedge (1612)	"Starting API task: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	10332
+Info	2021-05-15 20:30:46.357	usage_restrictions_client.cpp:137	msedge (1612)	"Searching for cached usage restrictions response"	mipns::UsageRestrictionsClient::FindCachedRestResponse	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:145	msedge (1612)	"Using publishing license domains for service discovery"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:174	msedge (1612)	"No cached DNS entry found"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:207	msedge (1612)	"Service Details Domain: https://481401b3-2464-46e6-b1dc-7e3b6d4c7bdb.rms.sa.aadrm.com/_wmcs/licensing"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:208	msedge (1612)	"Service Details DNS-resolved URL: https://api.aadrm.com"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:218	msedge (1612)	"Service Details Endpoint Type: Azure RMS"	mipns::ServiceDiscoveryHelper::GetServiceDetailsWithLicense	10332
+Info	2021-05-15 20:30:46.357	service_discovery_helper.cpp:227	msedge (1612)	"Service discovery disabled. Using default service URLs"	mipns::ServiceDiscoveryHelper::FindCachedServiceDiscoveryDetails	10332
+Info	2021-05-15 20:30:46.357	protection_http_provider.cpp:36	msedge (1612)	"https://api.aadrm.com/my/v2/enduserlicenses is auto-approved and requires no user consent."	mipns::ProtectionHttpProvider::RequestUserConsent	10332
+Info	2021-05-15 20:30:46.357	auth_info_store.cpp:76	msedge (1612)	"Failed to find OAuth2 challenge in cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75'"	mipns::AuthInfoStore::FindChallenge	10332
+Info	2021-05-15 20:30:46.357	auth_request_transformer.cpp:48	msedge (1612)	"Failed to get auth token from cached auth header. Failed with: [InternalError: 'Cannot parse empty auth header or request URL']"	mipns::AuthRequestTransformer::TransformRequestPriorToInitialSend	10332
+Info	2021-05-15 20:30:46.357	http_director_impl.cpp:118	msedge (1612)	"Sending HTTP request: ID: a77d96f5-a97b-443b-ad98-4da82e5d2b3f;c0f5517c-e29c-4c86-9234-e6b427e36f5e, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.62;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	10332
+Info	2021-05-15 20:30:46.980	http_client_base.cpp:45	msedge (1612)	"HTTP response time (seconds): 0.621643 ID: a77d96f5-a97b-443b-ad98-4da82e5d2b3f;c0f5517c-e29c-4c86-9234-e6b427e36f5e"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	5276
+Info	2021-05-15 20:30:46.980	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [fb84b1cb-9908-4803-9387-539f5123592a], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.621812], Pii: [None]
+	Event.ParentCorrelationId: [13e754c3-f8fb-4d28-9eca-9249c1c5ed10], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [f9f05fa9-1f02-4513-9f77-fc0f462511d9], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [a77d96f5-a97b-443b-ad98-4da82e5d2b3f;c0f5517c-e29c-4c86-9234-e6b427e36f5e], Pii: [None]
+	Request.HttpStatusCode: [401], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [61], Pii: [None]
+	Request.TokenTenantId: [], Pii: [None]
+	Request.TokenUserObjectId: [], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:46.980	http_director_impl.cpp:36	msedge (1612)	"Received HTTP response: ID: a77d96f5-a97b-443b-ad98-4da82e5d2b3f;c0f5517c-e29c-4c86-9234-e6b427e36f5e, Status: 401, Time: 2021-05-15T23:30:46Z, Body: {""Message"":""Authorization has been denied for this request.""}, Headers['Date'] = 'Sat, 15 May 2021 23:30:45 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['x-cache'] = 'CONFIG_NOCACHE, CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['x-msedge-ref'] = 'Ref A: 7F58DEFE19124117B6FE4EEDBEC712D6 Ref B: CPQ02EDGE0717 Ref C: 2021-05-15T23:30:45Z', Headers['x-powered-by'] = 'ASP.NET, ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['correlationid'] = 'a77d96f5-a97b-443b-ad98-4da82e5d2b3f', Headers['Content-Length'] = '61', Headers['WWW-Authenticate'] = 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""', Headers['x-aspnet-version'] = '4.0.30319', Headers['client-request-id'] = 'a77d96f5-a97b-443b-ad98-4da82e5d2b3f', Headers['strict-transport-security'] = 'max-age=31536000; includeSubDomains, max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	10332
+Info	2021-05-15 20:30:46.980	auth_request_transformer.cpp:155	msedge (1612)	"Requesting auth token from app. Resource: 'https://aadrm.com', Authority: 'https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87', Scope: 'ee60b2a1-d713-4227-b536-a9f245482a87', Claims: ''"	mipns::AuthRequestTransformer::GetAuthToken	10332
+Info	2021-05-15 20:30:46.980	auth_request_transformer.cpp:169	msedge (1612)	"Authentication response time (seconds): 2.97e-05"	mipns::AuthRequestTransformer::GetAuthToken	10332
+Info	2021-05-15 20:30:46.980	http_director_impl.cpp:118	msedge (1612)	"Sending HTTP request: ID: 5edbb7ad-f463-4108-b17c-8b2088dcd59e;16747eca-701e-417d-8b72-c5e77a2f4849, Type: POST, Url: https://api.aadrm.com/my/v2/enduserlicenses, Body Size: 9674, Headers['Accept'] = 'application/json', Headers['Content-Type'] = 'application/json', Headers['Authorization'] = 'Name:IGOR LACIVITA DE GÓES ORTIZ;UOID:e375a5b0-3aa5-4713-81da-0e538c345e6f;Tenant:ee60b2a1-d713-4227-b536-a9f245482a87;Audience:https://aadrm.com;Scopes:user_impersonation;', Headers['Accept-Language'] = 'en-US', Headers['x-ms-rms-request-id'] = 'a77d96f5-a97b-443b-ad98-4da82e5d2b3f;c0f5517c-e29c-4c86-9234-e6b427e36f5e', Headers['x-ms-rms-platform-id'] = 'AppName=Microsoft Edge;AppVersion=90.0.818.62;DevicePlatform=WindowsStore;SDKVersion=4.3;UniqueId=ecd6b820-32c2-49b6-98a6-444530e5a77a;OsName=win;OsVersion=10-0-19042;MipVersion=1.6.152;'"	mipns::HttpDirectorImpl::DoSendHttp	10332
+Info	2021-05-15 20:30:47.346	http_client_base.cpp:45	msedge (1612)	"HTTP response time (seconds): 0.365717 ID: 5edbb7ad-f463-4108-b17c-8b2088dcd59e;16747eca-701e-417d-8b72-c5e77a2f4849"	mipns::HttpClientBase::SendAsync::<lambda_fc428b8432a90bca65994d9d8bb251a6>::operator ()	5804
+Info	2021-05-15 20:30:47.346	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [rest_http_client_send]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [fb84b1cb-9908-4803-9387-539f5123592a], Pii: [None]
+	Event.CorrelationIdDescription: [HttpDirector], Pii: [None]
+	Event.Duration: [0.365864], Pii: [None]
+	Event.ParentCorrelationId: [13e754c3-f8fb-4d28-9eca-9249c1c5ed10], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.UniqueId: [83bca8e0-fe1f-4101-8d3b-aaffb63b8c66], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Request.CorrelationId: [5edbb7ad-f463-4108-b17c-8b2088dcd59e;16747eca-701e-417d-8b72-c5e77a2f4849], Pii: [None]
+	Request.HttpStatusCode: [200], Pii: [None]
+	Request.IsAsynchronous: [false], Pii: [None]
+	Request.RequestBodySize: [9674], Pii: [None]
+	Request.ResponseBodySize: [1020], Pii: [None]
+	Request.TokenTenantId: [ee60b2a1-d713-4227-b536-a9f245482a87], Pii: [None]
+	Request.TokenUserObjectId: [e375a5b0-3aa5-4713-81da-0e538c345e6f], Pii: [None]
+	Request.Url: [https://api.aadrm.com/my/v2/enduserlicenses], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:47.346	http_director_impl.cpp:36	msedge (1612)	"Received HTTP response: ID: 5edbb7ad-f463-4108-b17c-8b2088dcd59e;16747eca-701e-417d-8b72-c5e77a2f4849, Status: 200, Time: 2021-05-15T23:30:47Z, Body: SCRUBBED, Headers['Date'] = 'Sat, 15 May 2021 23:30:46 GMT', Headers['Pragma'] = 'no-cache', Headers['Expires'] = '-1', Headers['X-Cache'] = 'CONFIG_NOCACHE', Headers['Content-Type'] = 'application/json; charset=utf-8', Headers['X-MSEdge-Ref'] = 'Ref A: 4E08641B64794EF88219BCAD7A06017F Ref B: CPQ02EDGE0607 Ref C: 2021-05-15T23:30:46Z', Headers['X-Powered-By'] = 'ASP.NET', Headers['Cache-Control'] = 'no-cache', Headers['CorrelationId'] = '5edbb7ad-f463-4108-b17c-8b2088dcd59e', Headers['Content-Length'] = '1020', Headers['X-AspNet-Version'] = '4.0.30319', Headers['client-request-id'] = '5edbb7ad-f463-4108-b17c-8b2088dcd59e', Headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'"	`anonymous-namespace'::LogHttpOperationDetails	10332
+Info	2021-05-15 20:30:47.346	auth_info_store.cpp:46	msedge (1612)	"Adding OAuth2 challenge to cache. Domain: api.aadrm.com IssuerId: 'aed27c85-9570-4a1d-8fbb-a4101e81af75' Challenge: 'Bearer resource=""https://aadrm.com"", realm=""ee60b2a1-d713-4227-b536-a9f245482a87"", authorization=""https://login.windows.net/ee60b2a1-d713-4227-b536-a9f245482a87/oauth2/authorize""'"	mipns::AuthInfoStore::AddChallenge	10332
+Info	2021-05-15 20:30:47.346	usage_restrictions_client.cpp:234	msedge (1612)	"Examining a usage restrictions response:AccessStatus: AccessGrantedTemplateId: 00000000-0000-0000-0000-000000000000Name: Restricted AccessReferrer: Owner: 082170035@ftt.cefsa.edu.brCipherMode: MICROSOFT.CBC4KAllowOfflineAccess: 0LicenseValidUntil: 2021-05-15T23:30:46ZContentId: 04df08a6-6f81-4fe4-9d91-0a88925e2241LabelId: 00000000-0000-0000-0000-000000000000FromTemplate: 0"	mipns::ValidateAndLogLicenseResponse	10332
+Info	2021-05-15 20:30:47.346	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [protection_policy_acquire]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [13e754c3-f8fb-4d28-9eca-9249c1c5ed10], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.Duration: [4.67e-05], Pii: [None]
+	Event.ParentCorrelationId: [d226dc1a-a302-4d83-87d9-9f2c7e401fa1], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [cb720d4d-8733-489e-bff3-cd5dbd829370], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	Response.AccessStatus: [AccessGranted], Pii: [None]
+	Response.ContentId: [04df08a6-6f81-4fe4-9d91-0a88925e2241], Pii: [None]
+	Response.KeyAlgorithm: [AES], Pii: [None]
+	Response.KeyCipherMode: [MICROSOFT.CBC4K], Pii: [None]
+	Response.KeySize: [32], Pii: [None]
+	Response.LabelId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.TemplateId: [00000000-0000-0000-0000-000000000000], Pii: [None]
+	Response.Type: [EndUserLicense], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:47.346	common/api_utils.h:203	msedge (1612)	"Start calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	10332
+Info	2021-05-15 20:30:47.347	common/api_utils.h:205	msedge (1612)	"Ended calling success callback for API: protection_engine_create_consuming_protection_handler"	mipns::TryExecuteSuccessCallback::<lambda_edafb8c7d85c88dfcaf0fe672460dc53>::operator ()	10332
+Info	2021-05-15 20:30:47.347	telemetry_utils.cpp:66	msedge (1612)	"Send Telemetry. Event Name : [protection_engine_create_consuming_protection_handler]
+	App.ApplicationId: [ecd6b820-32c2-49b6-98a6-444530e5a77a], Pii: [None]
+	App.ApplicationName: [Microsoft Edge], Pii: [None]
+	App.ApplicationVersion: [90.0.818.62], Pii: [None]
+	App.SessionId: [], Pii: [None]
+	Engine.SessionId: [], Pii: [None]
+	Event.CorrelationId: [13e754c3-f8fb-4d28-9eca-9249c1c5ed10], Pii: [None]
+	Event.CorrelationIdDescription: [ProtectionEngine], Pii: [None]
+	Event.CreatedObjectCorrelationId: [a33339e0-442b-4203-927f-02156847f049], Pii: [None]
+	Event.CreatedObjectCorrelationIdDescription: [ProtectionHandler], Pii: [None]
+	Event.Duration: [0.989104], Pii: [None]
+	Event.ParentCorrelationId: [d226dc1a-a302-4d83-87d9-9f2c7e401fa1], Pii: [None]
+	Event.ParentCorrelationIdDescription: [ProtectionProfile], Pii: [None]
+	Event.UniqueId: [208343ec-3066-4b84-81af-6c856272fb2f], Pii: [None]
+	EventInfo.Level: [10], Pii: [None]
+	EventInfo.PrivTags: [33554432], Pii: [None]
+	MIP.Version: [1.6.152], Pii: [None]
+	PL.KeyType: [Single], Pii: [None]
+	iKey: [ce9aa5fb5a414ecebb15af10715bd8ff-831d197e-fc97-4df6-b998-c8c13a0fc3ce-6768], Pii: [None]
+"	mipns::WriteEventToLog	10332
+Info	2021-05-15 20:30:47.347	protection_engine_impl.cpp:691	msedge (1612)	"Ended API call: protection_engine_create_consuming_protection_handler"	mipns::ProtectionEngineImpl::CreateProtectionHandlerForConsumption	10332
+Info	2021-05-15 20:30:47.347	protection_handler_impl.cpp:290	msedge (1612)	" +ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	10332
+Info	2021-05-15 20:30:47.347	protection_handler_impl.cpp:302	msedge (1612)	" -ProtectionHandlerImpl::DecryptBuffer"	mipns::ProtectionHandlerImpl::DecryptBuffer	10332

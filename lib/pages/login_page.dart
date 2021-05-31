@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ftt/features/app_bar.dart';
-import 'package:flutter_ftt/pages/register_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -22,14 +21,6 @@ class LoginScreen extends StatelessWidget {
               createLogin(_controllerEmail, _controllerPassword);
             },
           ),
-          ElevatedButton(
-            child: Text("Registrar"),
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context){
-                return RegisterScreen();
-              } ));
-            },
-          )
         ],
       ),
     );

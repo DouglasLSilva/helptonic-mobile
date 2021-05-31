@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ftt/constant/user_const.dart';
 import 'package:flutter_ftt/model/login.dart';
 import 'package:flutter_ftt/repository/login_repository.dart';
-import 'package:flutter_ftt/view/service/show_dialog.dart';
+import 'package:flutter_ftt/view/service/showDialog.dart';
 import 'package:flutter_ftt/view/widget/app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 

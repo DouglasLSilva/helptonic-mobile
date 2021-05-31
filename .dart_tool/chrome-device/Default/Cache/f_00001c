@@ -1,0 +1,860 @@
+define(['dart_sdk', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/circle_avatar.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/widgets/implicit_animations.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/painting/box_shadow.dart', 'packages/provider/src/provider.dart', 'packages/ff_navigation_bar/ff_navigation_bar_theme.dart', 'packages/flutter/src/rendering/stack.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/widgets/icon_data.dart'], (function load__packages__ff_navigation_bar__ff_navigation_bar_item_dart(dart_sdk, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__circle_avatar$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__widgets__implicit_animations$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__painting__box_shadow$46dart, packages__provider__src__provider$46dart, packages__ff_navigation_bar__ff_navigation_bar_theme$46dart, packages__flutter__src__rendering__stack$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__widgets__icon_data$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const circle_avatar = packages__flutter__src__material__circle_avatar$46dart.src__material__circle_avatar;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const implicit_animations = packages__flutter__src__widgets__implicit_animations$46dart.src__widgets__implicit_animations;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const box_shadow = packages__flutter__src__painting__box_shadow$46dart.src__painting__box_shadow;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const ff_navigation_bar_theme = packages__ff_navigation_bar__ff_navigation_bar_theme$46dart.ff_navigation_bar_theme;
+  const stack = packages__flutter__src__rendering__stack$46dart.src__rendering__stack;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  var ff_navigation_bar_item = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    BoxShadowL: () => (T.BoxShadowL = dart.constFn(dart.legacy(box_shadow.BoxShadow)))(),
+    JSArrayOfBoxShadowL: () => (T.JSArrayOfBoxShadowL = dart.constFn(_interceptors.JSArray$(T.BoxShadowL())))(),
+    FFNavigationBarThemeL: () => (T.FFNavigationBarThemeL = dart.constFn(dart.legacy(ff_navigation_bar_theme.FFNavigationBarTheme)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: core.Duration.prototype,
+        [Duration__duration]: 1500000
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 9,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 9,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 9,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3, C[4] || CT.C4, C[5] || CT.C5], T._LocationL());
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "radius",
+        [_Location_column]: 11,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 11,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12, C[13] || CT.C13], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17, C[18] || CT.C18], T._LocationL());
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 89,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "radius",
+        [_Location_column]: 7,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 7,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22, C[23] || CT.C23], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 7,
+        [_Location_line]: 108,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 7,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 107,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: ui.Offset.prototype,
+        [OffsetBase__dy]: 0,
+        [OffsetBase__dx]: 0
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 520093696
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: box_shadow.BoxShadow.prototype,
+        [Shadow_blurRadius]: 2,
+        [Shadow_offset]: C[29] || CT.C29,
+        [Shadow_color]: C[30] || CT.C30,
+        [BoxShadow_spreadRadius]: 0
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "duration",
+        [_Location_column]: 7,
+        [_Location_line]: 121,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 122,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 123,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 7,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34, C[35] || CT.C35, C[36] || CT.C36], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 120,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([], T._LocationL());
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 68,
+        [_Location_line]: 157,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 28,
+        [_Location_line]: 176,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.constList([C[41] || CT.C41], T._LocationL());
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[40] || CT.C40,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 176,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 28,
+        [_Location_line]: 179,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([C[44] || CT.C44], T._LocationL());
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 179,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 17,
+        [_Location_line]: 174,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 175,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47, C[48] || CT.C48], T._LocationL());
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 173,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 15,
+        [_Location_line]: 170,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 15,
+        [_Location_line]: 171,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "right",
+        [_Location_column]: 15,
+        [_Location_line]: 172,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 173,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.constList([C[51] || CT.C51, C[52] || CT.C52, C[53] || CT.C53, C[54] || CT.C54], T._LocationL());
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[50] || CT.C50,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 169,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "overflow",
+        [_Location_column]: 11,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 168,
+        [_Location_file]: null
+      });
+    },
+    get C56() {
+      return C[56] = dart.constList([C[57] || CT.C57, C[58] || CT.C58], T._LocationL());
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[56] || CT.C56,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 166,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61, C[62] || CT.C62, C[63] || CT.C63], T._LocationL());
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 163,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 161,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "duration",
+        [_Location_column]: 7,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 163,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.constList([C[66] || CT.C66, C[67] || CT.C67, C[68] || CT.C68, C[69] || CT.C69], T._LocationL());
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[65] || CT.C65,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///D:/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/ff_navigation_bar-0.1.5/lib/ff_navigation_bar_item.dart"
+      });
+    }
+  }, false);
+  var C = Array(70).fill(void 0);
+  var I = ["package:ff_navigation_bar/ff_navigation_bar_item.dart"];
+  var label$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.label");
+  var iconData$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.iconData");
+  var animationDuration$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.animationDuration");
+  var selectedBackgroundColor$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.selectedBackgroundColor");
+  var selectedForegroundColor$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.selectedForegroundColor");
+  var selectedLabelColor$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.selectedLabelColor");
+  var index = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.index");
+  var selectedIndex = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.selectedIndex");
+  var theme = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.theme");
+  var showSelectedItemShadow = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.showSelectedItemShadow");
+  var itemWidth$ = dart.privateName(ff_navigation_bar_item, "FFNavigationBarItem.itemWidth");
+  var Duration__duration = dart.privateName(core, "Duration._duration");
+  var _getDerivedBorderColor = dart.privateName(ff_navigation_bar_item, "_getDerivedBorderColor");
+  var _getBorderColor = dart.privateName(ff_navigation_bar_item, "_getBorderColor");
+  var _isItemSelected = dart.privateName(ff_navigation_bar_item, "_isItemSelected");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var _makeLabel = dart.privateName(ff_navigation_bar_item, "_makeLabel");
+  var _makeIcon = dart.privateName(ff_navigation_bar_item, "_makeIcon");
+  var _makeIconArea = dart.privateName(ff_navigation_bar_item, "_makeIconArea");
+  var Shadow_blurRadius = dart.privateName(ui, "Shadow.blurRadius");
+  var OffsetBase__dy = dart.privateName(ui, "OffsetBase._dy");
+  var OffsetBase__dx = dart.privateName(ui, "OffsetBase._dx");
+  var Shadow_offset = dart.privateName(ui, "Shadow.offset");
+  var Color_value = dart.privateName(ui, "Color.value");
+  var Shadow_color = dart.privateName(ui, "Shadow.color");
+  var BoxShadow_spreadRadius = dart.privateName(box_shadow, "BoxShadow.spreadRadius");
+  var _makeShadow = dart.privateName(ff_navigation_bar_item, "_makeShadow");
+  ff_navigation_bar_item.FFNavigationBarItem = class FFNavigationBarItem extends framework.StatelessWidget {
+    get label() {
+      return this[label$];
+    }
+    set label(value) {
+      super.label = value;
+    }
+    get iconData() {
+      return this[iconData$];
+    }
+    set iconData(value) {
+      super.iconData = value;
+    }
+    get animationDuration() {
+      return this[animationDuration$];
+    }
+    set animationDuration(value) {
+      super.animationDuration = value;
+    }
+    get selectedBackgroundColor() {
+      return this[selectedBackgroundColor$];
+    }
+    set selectedBackgroundColor(value) {
+      this[selectedBackgroundColor$] = value;
+    }
+    get selectedForegroundColor() {
+      return this[selectedForegroundColor$];
+    }
+    set selectedForegroundColor(value) {
+      this[selectedForegroundColor$] = value;
+    }
+    get selectedLabelColor() {
+      return this[selectedLabelColor$];
+    }
+    set selectedLabelColor(value) {
+      this[selectedLabelColor$] = value;
+    }
+    get index() {
+      return this[index];
+    }
+    set index(value) {
+      this[index] = value;
+    }
+    get selectedIndex() {
+      return this[selectedIndex];
+    }
+    set selectedIndex(value) {
+      this[selectedIndex] = value;
+    }
+    get theme() {
+      return this[theme];
+    }
+    set theme(value) {
+      this[theme] = value;
+    }
+    get showSelectedItemShadow() {
+      return this[showSelectedItemShadow];
+    }
+    set showSelectedItemShadow(value) {
+      this[showSelectedItemShadow] = value;
+    }
+    get itemWidth() {
+      return this[itemWidth$];
+    }
+    set itemWidth(value) {
+      this[itemWidth$] = value;
+    }
+    setIndex(index) {
+      this.index = index;
+    }
+    [_getDerivedBorderColor]() {
+      let t0;
+      t0 = this.theme.selectedItemBorderColor;
+      return t0 == null ? this.theme.barBackgroundColor : t0;
+    }
+    [_getBorderColor](isOn) {
+      return dart.test(isOn) ? this[_getDerivedBorderColor]() : colors.Colors.transparent;
+    }
+    [_isItemSelected]() {
+      return this.index == this.selectedIndex;
+    }
+    [_makeLabel](label) {
+      let t0;
+      let isSelected = this[_isItemSelected]();
+      return new basic.Center.new({child: new text.Text.new(label, {textAlign: ui.TextAlign.center, style: new text_style.TextStyle.new({fontSize: dart.test(isSelected) ? this.theme.selectedItemTextStyle.fontSize : this.theme.unselectedItemTextStyle.fontSize, fontWeight: dart.test(isSelected) ? this.theme.selectedItemTextStyle.fontWeight : this.theme.unselectedItemTextStyle.fontWeight, color: dart.test(isSelected) ? (t0 = this.selectedLabelColor, t0 == null ? this.theme.selectedItemLabelColor : t0) : this.theme.unselectedItemLabelColor, letterSpacing: dart.test(isSelected) ? 1.1 : 1.0}), $creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6});
+    }
+    [_makeIconArea](itemWidth, iconData) {
+      let t0;
+      let isSelected = this[_isItemSelected]();
+      let radius = dart.notNull(itemWidth) / 2;
+      let innerBoxSize = dart.notNull(itemWidth) - 8;
+      let innerRadius = (dart.notNull(itemWidth) - 8) / 2 - 4;
+      return new circle_avatar.CircleAvatar.new({radius: dart.test(isSelected) ? radius : radius * 0.7, backgroundColor: this[_getBorderColor](isSelected), child: new basic.SizedBox.new({width: innerBoxSize, height: dart.test(isSelected) ? innerBoxSize : innerBoxSize / 2, child: new circle_avatar.CircleAvatar.new({radius: innerRadius, backgroundColor: dart.test(isSelected) ? (t0 = this.selectedBackgroundColor, t0 == null ? this.theme.selectedItemBackgroundColor : t0) : this.theme.unselectedItemBackgroundColor, child: this[_makeIcon](iconData), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19});
+    }
+    [_makeIcon](iconData) {
+      let t0;
+      let isSelected = this[_isItemSelected]();
+      return new icon.Icon.new(iconData, {color: dart.test(isSelected) ? (t0 = this.selectedForegroundColor, t0 == null ? this.theme.selectedItemIconColor : t0) : this.theme.unselectedItemIconColor, $creationLocationd_0dea112b090073317d4: C[24] || CT.C24});
+    }
+    [_makeShadow]() {
+      let isSelected = this[_isItemSelected]();
+      let height = dart.test(isSelected) ? 4.0 : 0.0;
+      let width = dart.test(isSelected) ? dart.notNull(this.itemWidth) + 6 : 0.0;
+      return new implicit_animations.AnimatedContainer.new({duration: new core.Duration.new({milliseconds: 100}), height: height, width: width, decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.elliptical(dart.notNull(this.itemWidth) / 2, 2.0)), boxShadow: T.JSArrayOfBoxShadowL().of([C[28] || CT.C28])}), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31});
+    }
+    build(context) {
+      let t0, t0$, t0$0;
+      this.theme = provider.Provider.of(T.FFNavigationBarThemeL(), context);
+      this.showSelectedItemShadow = this.theme.showSelectedItemShadow;
+      this.itemWidth = this.theme.itemWidth;
+      this.selectedIndex = provider.Provider.of(T.intL(), context);
+      this.selectedBackgroundColor = (t0 = this.selectedBackgroundColor, t0 == null ? this.theme.selectedItemBackgroundColor : t0);
+      this.selectedForegroundColor = (t0$ = this.selectedForegroundColor, t0$ == null ? this.theme.selectedItemIconColor : t0$);
+      this.selectedLabelColor = (t0$0 = this.selectedLabelColor, t0$0 == null ? this.theme.selectedItemLabelColor : t0$0);
+      let isSelected = this[_isItemSelected]();
+      let itemHeight = dart.notNull(this.itemWidth) - 20;
+      let topOffset = dart.test(isSelected) ? -20.0 : -10.0;
+      let iconTopSpacer = dart.test(isSelected) ? 0.0 : 2.0;
+      let shadowTopSpacer = 4.0;
+      let labelWidget = this[_makeLabel](this.label);
+      let iconAreaWidget = this[_makeIconArea](this.itemWidth, this.iconData);
+      let shadowWidget = dart.test(this.showSelectedItemShadow) ? this[_makeShadow]() : new container.Container.new({$creationLocationd_0dea112b090073317d4: C[37] || CT.C37});
+      return new implicit_animations.AnimatedContainer.new({width: this.itemWidth, height: 1.7976931348623157e+308, duration: this.animationDuration, child: new basic.SizedBox.new({width: this.itemWidth, height: itemHeight, child: new basic.Stack.new({overflow: stack.Overflow.visible, children: T.JSArrayOfWidgetL().of([new basic.Positioned.new({top: topOffset, left: -dart.notNull(this.itemWidth) / 2, right: -dart.notNull(this.itemWidth) / 2, child: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.center, children: T.JSArrayOfWidgetL().of([new basic.SizedBox.new({height: iconTopSpacer, $creationLocationd_0dea112b090073317d4: C[39] || CT.C39}), iconAreaWidget, labelWidget, new basic.SizedBox.new({height: shadowTopSpacer, $creationLocationd_0dea112b090073317d4: C[42] || CT.C42}), shadowWidget]), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), $creationLocationd_0dea112b090073317d4: C[49] || CT.C49})]), $creationLocationd_0dea112b090073317d4: C[55] || CT.C55}), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59}), $creationLocationd_0dea112b090073317d4: C[64] || CT.C64});
+    }
+  };
+  (ff_navigation_bar_item.FFNavigationBarItem.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let label = opts && 'label' in opts ? opts.label : null;
+    let itemWidth = opts && 'itemWidth' in opts ? opts.itemWidth : 60;
+    let selectedBackgroundColor = opts && 'selectedBackgroundColor' in opts ? opts.selectedBackgroundColor : null;
+    let selectedForegroundColor = opts && 'selectedForegroundColor' in opts ? opts.selectedForegroundColor : null;
+    let selectedLabelColor = opts && 'selectedLabelColor' in opts ? opts.selectedLabelColor : null;
+    let iconData = opts && 'iconData' in opts ? opts.iconData : null;
+    let animationDuration = opts && 'animationDuration' in opts ? opts.animationDuration : C[0] || CT.C0;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[index] = null;
+    this[selectedIndex] = null;
+    this[theme] = null;
+    this[showSelectedItemShadow] = null;
+    this[label$] = label;
+    this[itemWidth$] = itemWidth;
+    this[selectedBackgroundColor$] = selectedBackgroundColor;
+    this[selectedForegroundColor$] = selectedForegroundColor;
+    this[selectedLabelColor$] = selectedLabelColor;
+    this[iconData$] = iconData;
+    this[animationDuration$] = animationDuration;
+    ff_navigation_bar_item.FFNavigationBarItem.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ff_navigation_bar_item.FFNavigationBarItem.prototype;
+  dart.addTypeTests(ff_navigation_bar_item.FFNavigationBarItem);
+  dart.addTypeCaches(ff_navigation_bar_item.FFNavigationBarItem);
+  dart.setMethodSignature(ff_navigation_bar_item.FFNavigationBarItem, () => ({
+    __proto__: dart.getMethods(ff_navigation_bar_item.FFNavigationBarItem.__proto__),
+    setIndex: dart.fnType(dart.void, [dart.legacy(core.int)]),
+    [_getDerivedBorderColor]: dart.fnType(dart.legacy(ui.Color), []),
+    [_getBorderColor]: dart.fnType(dart.legacy(ui.Color), [dart.legacy(core.bool)]),
+    [_isItemSelected]: dart.fnType(dart.legacy(core.bool), []),
+    [_makeLabel]: dart.fnType(dart.legacy(basic.Center), [dart.legacy(core.String)]),
+    [_makeIconArea]: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(core.double), dart.legacy(icon_data.IconData)]),
+    [_makeIcon]: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(icon_data.IconData)]),
+    [_makeShadow]: dart.fnType(dart.legacy(framework.Widget), []),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(ff_navigation_bar_item.FFNavigationBarItem, I[0]);
+  dart.setFieldSignature(ff_navigation_bar_item.FFNavigationBarItem, () => ({
+    __proto__: dart.getFields(ff_navigation_bar_item.FFNavigationBarItem.__proto__),
+    label: dart.finalFieldType(dart.legacy(core.String)),
+    iconData: dart.finalFieldType(dart.legacy(icon_data.IconData)),
+    animationDuration: dart.finalFieldType(dart.legacy(core.Duration)),
+    selectedBackgroundColor: dart.fieldType(dart.legacy(ui.Color)),
+    selectedForegroundColor: dart.fieldType(dart.legacy(ui.Color)),
+    selectedLabelColor: dart.fieldType(dart.legacy(ui.Color)),
+    index: dart.fieldType(dart.legacy(core.int)),
+    selectedIndex: dart.fieldType(dart.legacy(core.int)),
+    theme: dart.fieldType(dart.legacy(ff_navigation_bar_theme.FFNavigationBarTheme)),
+    showSelectedItemShadow: dart.fieldType(dart.legacy(core.bool)),
+    itemWidth: dart.fieldType(dart.legacy(core.double))
+  }));
+  dart.defineLazy(ff_navigation_bar_item.FFNavigationBarItem, {
+    /*ff_navigation_bar_item.FFNavigationBarItem.kDefaultAnimationDuration*/get kDefaultAnimationDuration() {
+      return C[0] || CT.C0;
+    }
+  }, true);
+  dart.trackLibraries("packages/ff_navigation_bar/ff_navigation_bar_item.dart", {
+    "package:ff_navigation_bar/ff_navigation_bar_item.dart": ff_navigation_bar_item
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["ff_navigation_bar_item.dart"],"names":[],"mappings":"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","file":"../../../../../../../../C:/packages/ff_navigation_bar/ff_navigation_bar_item.dart.lib.js"}');
+  // Exports:
+  return {
+    ff_navigation_bar_item: ff_navigation_bar_item
+  };
+}));
+
+//# sourceMappingURL=ff_navigation_bar_item.dart.lib.js.map

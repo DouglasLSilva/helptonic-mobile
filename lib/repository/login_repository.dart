@@ -31,7 +31,7 @@ class LoginRepository implements IApiSheetInterfaceLogin {
         UserConst.disconnected = false;
         UserConst.imageCarousel = true;
         for (int i = 0; i < responseData.photo.length; i++) {
-          imageList.add(responseData.photo[i].imageUrl);
+          UserConst.imageList.add(responseData.photo[i].imageUrl);
         }
       }
 

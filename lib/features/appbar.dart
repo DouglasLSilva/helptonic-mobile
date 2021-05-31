@@ -8,11 +8,6 @@ AppBar buildAppBar() {
     leading: IconButton(
         icon: SvgPicture.asset('assets/slide.svg', height: 25),
         onPressed: null),
-    //actions: <Widget>[
-    //IconButton(
-    //icon: SvgPicture.asset('assets/people.svg', height: 23),
-    //onPressed: null)
-    //],
     backgroundColor: Colors.transparent,
     elevation: 0.0,
   );
