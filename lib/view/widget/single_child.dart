@@ -2,11 +2,13 @@ import 'package:carousel_images/carousel_images.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ftt/constant/user_const.dart';
+import 'package:flutter_ftt/view/page/photo_detail.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
 
-SingleChildScrollView buildSingleChildScrollView(bool update) {
+SingleChildScrollView buildSingleChildScrollView(BuildContext context) {
+
   return SingleChildScrollView(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,7 +24,7 @@ SingleChildScrollView buildSingleChildScrollView(bool update) {
                   style: GoogleFonts.coda(fontSize: 18, color: Colors.black)),
               SizedBox(height: 8),
               Visibility(
-                child: createCarousel(),
+                child: createCarousel(context),
                 visible: UserConst.imageCarousel,
               ),
               Visibility(
@@ -37,7 +39,7 @@ SingleChildScrollView buildSingleChildScrollView(bool update) {
   );
 }
 
-CarouselImages createCarousel() {
+CarouselImages createCarousel(BuildContext context) {
 
   return new CarouselImages(
       scaleFactor: 0.8,
@@ -45,7 +47,13 @@ CarouselImages createCarousel() {
       height: 300.0,
       borderRadius: 10.0,
       cachedNetworkImage: true,
-      verticalAlignment: Alignment.topCenter);
+      verticalAlignment: Alignment.topCenter,
+      onTap: (index) {
+        Navigator.push(context,
+                      MaterialPageRoute(builder: (context) {
+                    return PhotoDetailScreen(index);
+                  }));
+      });
 }
 
 buildCardInfo() {

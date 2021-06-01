@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ftt/constant/user_const.dart';
 import 'package:flutter_ftt/model/register.dart';
 import 'package:flutter_ftt/repository/register_repository.dart';
-import 'package:flutter_ftt/view/service/alertDialog.dart';
+import 'package:flutter_ftt/view/service/showDialog.dart';
 import 'package:flutter_ftt/view/widget/app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,7 +24,7 @@ class RegisterScreen extends StatelessWidget {
           Editor(_controllerTipo, "Tipo", Icons.adjust, false),
           ElevatedButton(
             style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
             child: Text("Registrar"),
             onPressed: () {
               createRegister(_controllerEmail, _controllerPassword,
@@ -53,17 +52,15 @@ class RegisterScreen extends StatelessWidget {
           Register(email: email, senha: password, nome: nome, tipoDalt: tipo);
       RegisterRepository registerRepository = new RegisterRepository();
       var user = await registerRepository.registerUser(registerUser);
-      UserConst.disconnected = false;
-      UserConst.imageCarousel = true;
-      if (user.error != null) {
-        showDialog(
-            context: context,
-            builder: (BuildContext context) =>
-                alertDialog(context, 'Informações erradas/faltando'));
+
+      if (user.message != null) {
+        showMyDialog(context,"Email já cadastrado");
         _controllerEmail.clear();
         _controllerPassword.clear();
+      } 
+      else
         Navigator.pop(context, registerUser);
-      }
+
     } else if (email == null) {
       _controllerEmail.clear();
     } else if (password == null) {

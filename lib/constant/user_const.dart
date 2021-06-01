@@ -5,6 +5,7 @@ class UserConst{
   static String name = '';
   static String typeBlindess = '';
   static bool disconnected = true;
+  static bool connected = false;
   static bool imageCarousel = false;
   static List<String> imageList = [];
 }

@@ -1,0 +1,2259 @@
+define(['dart_sdk', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/drawer_header.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter_ftt/constant/user_const.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/material/colors.dart', 'packages/google_fonts/src/google_fonts_base.dart', 'packages/flutter_ftt/model/login.dart', 'packages/flutter/src/material/page.dart', 'packages/flutter_ftt/view/page/login_page.dart', 'packages/flutter_ftt/model/register.dart', 'packages/flutter_ftt/view/page/register_page.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter_icons/src/material_icons.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter_icons/src/font_awesome.dart', 'packages/flutter_ftt/aws_s3/image_picker/get_image_permission.dart', 'packages/flutter/src/widgets/icon_data.dart', 'packages/image_picker/image_picker.dart', 'packages/image_picker_platform_interface/src/types/image_source.dart', 'packages/flutter_ftt/aws_s3/aws/upload_files.dart', 'packages/flutter/src/material/app.dart', 'packages/flutter_ftt/view/widget/main_app_bar.dart', 'packages/flutter_ftt/view/widget/single_child.dart', 'packages/flutter/src/material/elevated_button.dart'], (function load__packages__flutter_ftt__view__widget__side_bar_dart(dart_sdk, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__drawer_header$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter_ftt__constant__user_const$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__material__colors$46dart, packages__google_fonts__src__google_fonts_base$46dart, packages__flutter_ftt__model__login$46dart, packages__flutter__src__material__page$46dart, packages__flutter_ftt__view__page__login_page$46dart, packages__flutter_ftt__model__register$46dart, packages__flutter_ftt__view__page__register_page$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter_icons__src__material_icons$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter_icons__src__font_awesome$46dart, packages__flutter_ftt__aws_s3__image_picker__get_image_permission$46dart, packages__flutter__src__widgets__icon_data$46dart, packages__image_picker__image_picker$46dart, packages__image_picker_platform_interface__src__types__image_source$46dart, packages__flutter_ftt__aws_s3__aws__upload_files$46dart, packages__flutter__src__material__app$46dart, packages__flutter_ftt__view__widget__main_app_bar$46dart, packages__flutter_ftt__view__widget__single_child$46dart, packages__flutter__src__material__elevated_button$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const drawer = packages__flutter__src__material__icon_button$46dart.src__material__drawer;
+  const list_tile = packages__flutter__src__material__icon_button$46dart.src__material__list_tile;
+  const bottom_sheet = packages__flutter__src__material__icon_button$46dart.src__material__bottom_sheet;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const visibility = packages__flutter__src__widgets__widget_span$46dart.src__widgets__visibility;
+  const text$ = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const binding = packages__flutter__src__widgets__widget_span$46dart.src__widgets__binding;
+  const drawer_header = packages__flutter__src__material__drawer_header$46dart.src__material__drawer_header;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const user_const = packages__flutter_ftt__constant__user_const$46dart.constant__user_const;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const google_fonts = packages__google_fonts__src__google_fonts_base$46dart.google_fonts;
+  const login = packages__flutter_ftt__model__login$46dart.model__login;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const login_page = packages__flutter_ftt__view__page__login_page$46dart.view__page__login_page;
+  const register = packages__flutter_ftt__model__register$46dart.model__register;
+  const register_page = packages__flutter_ftt__view__page__register_page$46dart.view__page__register_page;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const material_icons = packages__flutter_icons__src__material_icons$46dart.src__material_icons;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const font_awesome = packages__flutter_icons__src__font_awesome$46dart.src__font_awesome;
+  const get_image_permission = packages__flutter_ftt__aws_s3__image_picker__get_image_permission$46dart.aws_s3__image_picker__get_image_permission;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  const image_picker = packages__image_picker__image_picker$46dart.image_picker;
+  const image_source = packages__image_picker_platform_interface__src__types__image_source$46dart.src__types__image_source;
+  const upload_files = packages__flutter_ftt__aws_s3__aws__upload_files$46dart.aws_s3__aws__upload_files;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const main_app_bar = packages__flutter_ftt__view__widget__main_app_bar$46dart.view__widget__main_app_bar;
+  const single_child = packages__flutter_ftt__view__widget__single_child$46dart.view__widget__single_child;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  var side_bar = Object.create(dart.library);
+  var add_attachment_sheet = Object.create(dart.library);
+  var single_image_picker = Object.create(dart.library);
+  var first_page = Object.create(dart.library);
+  var main = Object.create(dart.library);
+  var $toString = dartx.toString;
+  var $isNotEmpty = dartx.isNotEmpty;
+  var $add = dartx.add;
+  var $reversed = dartx.reversed;
+  var $toList = dartx.toList;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    LoginL: () => (T.LoginL = dart.constFn(dart.legacy(login.Login)))(),
+    MaterialPageRouteOfLoginL: () => (T.MaterialPageRouteOfLoginL = dart.constFn(page.MaterialPageRoute$(T.LoginL())))(),
+    LoginScreenL: () => (T.LoginScreenL = dart.constFn(dart.legacy(login_page.LoginScreen)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLToLoginScreenL: () => (T.BuildContextLToLoginScreenL = dart.constFn(dart.fnType(T.LoginScreenL(), [T.BuildContextL()])))(),
+    AppCoreL: () => (T.AppCoreL = dart.constFn(dart.legacy(main.AppCore)))(),
+    BuildContextLToAppCoreL: () => (T.BuildContextLToAppCoreL = dart.constFn(dart.fnType(T.AppCoreL(), [T.BuildContextL()])))(),
+    LoginLToNull: () => (T.LoginLToNull = dart.constFn(dart.fnType(core.Null, [T.LoginL()])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    RegisterL: () => (T.RegisterL = dart.constFn(dart.legacy(register.Register)))(),
+    MaterialPageRouteOfRegisterL: () => (T.MaterialPageRouteOfRegisterL = dart.constFn(page.MaterialPageRoute$(T.RegisterL())))(),
+    RegisterScreenL: () => (T.RegisterScreenL = dart.constFn(dart.legacy(register_page.RegisterScreen)))(),
+    BuildContextLToRegisterScreenL: () => (T.BuildContextLToRegisterScreenL = dart.constFn(dart.fnType(T.RegisterScreenL(), [T.BuildContextL()])))(),
+    RegisterLToNull: () => (T.RegisterLToNull = dart.constFn(dart.fnType(core.Null, [T.RegisterL()])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    VoidTodynamic: () => (T.VoidTodynamic = dart.constFn(dart.fnType(dart.dynamic, [])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    VoidToNvoid: () => (T.VoidToNvoid = dart.constFn(dart.nullable(T.VoidTovoid())))(),
+    SourceL: () => (T.SourceL = dart.constFn(dart.legacy(single_image_picker.Source)))(),
+    AddAttachmentModalSheetL: () => (T.AddAttachmentModalSheetL = dart.constFn(dart.legacy(add_attachment_sheet.AddAttachmentModalSheet)))(),
+    BuildContextLToAddAttachmentModalSheetL: () => (T.BuildContextLToAddAttachmentModalSheetL = dart.constFn(dart.fnType(T.AddAttachmentModalSheetL(), [T.BuildContextL()])))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    StringLToNull: () => (T.StringLToNull = dart.constFn(dart.fnType(core.Null, [T.StringL()])))(),
+    FutureOfNull: () => (T.FutureOfNull = dart.constFn(async.Future$(core.Null)))(),
+    FutureLOfNull: () => (T.FutureLOfNull = dart.constFn(dart.legacy(T.FutureOfNull())))(),
+    StringLToFutureLOfNull: () => (T.StringLToFutureLOfNull = dart.constFn(dart.fnType(T.FutureLOfNull(), [T.StringL()])))(),
+    VoidToFutureLOfNull: () => (T.VoidToFutureLOfNull = dart.constFn(dart.fnType(T.FutureLOfNull(), [])))(),
+    PickImageSourceL: () => (T.PickImageSourceL = dart.constFn(dart.legacy(main.PickImageSource)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 34,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scale",
+        [_Location_column]: 59,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 13,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9, C[10] || CT.C10], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 25,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 19,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.constList([C[13] || CT.C13, C[14] || CT.C14], T._LocationL());
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[12] || CT.C12,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 21,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17, C[18] || CT.C18], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 32,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 17,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 17,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 17,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26], T._LocationL());
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "visible",
+        [_Location_column]: 15,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29, C[30] || CT.C30], T._LocationL());
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 25,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 19,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 50,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 21,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37, C[38] || CT.C38], T._LocationL());
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 17,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 17,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 17,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44, C[45] || CT.C45], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "visible",
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([C[48] || CT.C48, C[49] || CT.C49], T._LocationL());
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 21,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 15,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52, C[53] || CT.C53], T._LocationL());
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 35,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56], T._LocationL());
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 13,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 13,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.constList([C[59] || CT.C59, C[60] || CT.C60], T._LocationL());
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[58] || CT.C58,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 21,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 15,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.constList([C[63] || CT.C63, C[64] || CT.C64], T._LocationL());
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[62] || CT.C62,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 34,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67], T._LocationL());
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 81,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 13,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70, C[71] || CT.C71], T._LocationL());
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 21,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 15,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.constList([C[74] || CT.C74, C[75] || CT.C75], T._LocationL());
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[73] || CT.C73,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 84,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 34,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.constList([C[78] || CT.C78], T._LocationL());
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[77] || CT.C77,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 13,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 13,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C80() {
+      return C[80] = dart.constList([C[81] || CT.C81, C[82] || CT.C82], T._LocationL());
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[80] || CT.C80,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 83,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 27,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 21,
+        [_Location_line]: 95,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.constList([C[85] || CT.C85, C[86] || CT.C86], T._LocationL());
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[84] || CT.C84,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 93,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C88() {
+      return C[88] = dart.constList([C[89] || CT.C89], T._LocationL());
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[88] || CT.C88,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 109,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 19,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 19,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 19,
+        [_Location_line]: 98,
+        [_Location_file]: null
+      });
+    },
+    get C92() {
+      return C[92] = dart.constList([C[93] || CT.C93, C[94] || CT.C94, C[95] || CT.C95], T._LocationL());
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[92] || CT.C92,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "visible",
+        [_Location_column]: 15,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C97() {
+      return C[97] = dart.constList([C[98] || CT.C98, C[99] || CT.C99], T._LocationL());
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[97] || CT.C97,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 90,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.constList([C[102] || CT.C102], T._LocationL());
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[101] || CT.C101,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C104() {
+      return C[104] = dart.constList([C[105] || CT.C105], T._LocationL());
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[104] || CT.C104,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/widget/side_bar.dart"
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 17,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 23,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.constList([C[108] || CT.C108, C[109] || CT.C109], T._LocationL());
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[107] || CT.C107,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 33,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C111() {
+      return C[111] = dart.constList([C[112] || CT.C112], T._LocationL());
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[111] || CT.C111,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 7,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C114() {
+      return C[114] = dart.constList([C[115] || CT.C115, C[116] || CT.C116], T._LocationL());
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[114] || CT.C114,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 15,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C118() {
+      return C[118] = dart.constList([C[119] || CT.C119, C[120] || CT.C120], T._LocationL());
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[118] || CT.C118,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 22,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C122() {
+      return C[122] = dart.constList([C[123] || CT.C123], T._LocationL());
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[122] || CT.C122,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C125() {
+      return C[125] = dart.constList([C[126] || CT.C126], T._LocationL());
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[125] || CT.C125,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 9,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C128() {
+      return C[128] = dart.constList([C[129] || CT.C129, C[130] || CT.C130], T._LocationL());
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[128] || CT.C128,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C132() {
+      return C[132] = dart.constList([C[133] || CT.C133, C[134] || CT.C134], T._LocationL());
+    },
+    get C131() {
+      return C[131] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[132] || CT.C132,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 18,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C136() {
+      return C[136] = dart.constList([C[137] || CT.C137], T._LocationL());
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[136] || CT.C136,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 22,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C139() {
+      return C[139] = dart.constList([C[140] || CT.C140], T._LocationL());
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[139] || CT.C139,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C142() {
+      return C[142] = dart.constList([C[143] || CT.C143, C[144] || CT.C144], T._LocationL());
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[142] || CT.C142,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C146() {
+      return C[146] = dart.constList([C[147] || CT.C147], T._LocationL());
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[146] || CT.C146,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C151() {
+      return C[151] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C149() {
+      return C[149] = dart.constList([C[150] || CT.C150, C[151] || CT.C151], T._LocationL());
+    },
+    get C148() {
+      return C[148] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[149] || CT.C149,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C154() {
+      return C[154] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 7,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C153() {
+      return C[153] = dart.constList([C[154] || CT.C154, C[155] || CT.C155], T._LocationL());
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[153] || CT.C153,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/add_attachment_sheet.dart"
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: single_image_picker.Source.prototype,
+        [_name$]: "Source.GALLERY",
+        index: 0
+      });
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: single_image_picker.Source.prototype,
+        [_name$]: "Source.CAMERA",
+        index: 1
+      });
+    },
+    get C158() {
+      return C[158] = dart.const({
+        __proto__: single_image_picker.Source.prototype,
+        [_name$]: "Source.NONE",
+        index: 2
+      });
+    },
+    get C159() {
+      return C[159] = dart.constList([C[156] || CT.C156, C[157] || CT.C157, C[158] || CT.C158], T.SourceL());
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: main.PickImageSource.prototype,
+        [_name$0]: "PickImageSource.both",
+        index: 2
+      });
+    },
+    get C163() {
+      return C[163] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "screenSize",
+        [_Location_column]: 45,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C162() {
+      return C[162] = dart.constList([C[163] || CT.C163], T._LocationL());
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[162] || CT.C162,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/aws_s3/image_picker/single_image_picker.dart"
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C167() {
+      return C[167] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 28,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C166() {
+      return C[166] = dart.constList([C[167] || CT.C167], T._LocationL());
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[166] || CT.C166,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C170() {
+      return C[170] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 42,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 19,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 79,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C169() {
+      return C[169] = dart.constList([C[170] || CT.C170, C[171] || CT.C171, C[172] || CT.C172], T._LocationL());
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[169] || CT.C169,
+        [_Location_name]: null,
+        [_Location_column]: 37,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 30,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "visible",
+        [_Location_column]: 19,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C174() {
+      return C[174] = dart.constList([C[175] || CT.C175, C[176] || CT.C176], T._LocationL());
+    },
+    get C173() {
+      return C[173] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[174] || CT.C174,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 28,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C178() {
+      return C[178] = dart.constList([C[179] || CT.C179], T._LocationL());
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[178] || CT.C178,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C182() {
+      return C[182] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 35,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C181() {
+      return C[181] = dart.constList([C[182] || CT.C182], T._LocationL());
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[181] || CT.C181,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C185() {
+      return C[185] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 23,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C184() {
+      return C[184] = dart.constList([C[185] || CT.C185, C[186] || CT.C186, C[187] || CT.C187], T._LocationL());
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[184] || CT.C184,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 25,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C189() {
+      return C[189] = dart.constList([C[190] || CT.C190], T._LocationL());
+    },
+    get C188() {
+      return C[188] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[189] || CT.C189,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "visible",
+        [_Location_column]: 21,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C192() {
+      return C[192] = dart.constList([C[193] || CT.C193, C[194] || CT.C194], T._LocationL());
+    },
+    get C191() {
+      return C[191] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[192] || CT.C192,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C196() {
+      return C[196] = dart.constList([C[197] || CT.C197], T._LocationL());
+    },
+    get C195() {
+      return C[195] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[196] || CT.C196,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C200() {
+      return C[200] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C199() {
+      return C[199] = dart.constList([C[200] || CT.C200], T._LocationL());
+    },
+    get C198() {
+      return C[198] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[199] || CT.C199,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C203() {
+      return C[203] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "drawer",
+        [_Location_column]: 13,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C204() {
+      return C[204] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 13,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 13,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 13,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C202() {
+      return C[202] = dart.constList([C[203] || CT.C203, C[204] || CT.C204, C[205] || CT.C205, C[206] || CT.C206], T._LocationL());
+    },
+    get C201() {
+      return C[201] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[202] || CT.C202,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C209() {
+      return C[209] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "debugShowCheckedModeBanner",
+        [_Location_column]: 9,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C210() {
+      return C[210] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "home",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C208() {
+      return C[208] = dart.constList([C[209] || CT.C209, C[210] || CT.C210], T._LocationL());
+    },
+    get C207() {
+      return C[207] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[208] || CT.C208,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/view/page/first_page.dart"
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: main.PickImageSource.prototype,
+        [_name$0]: "PickImageSource.gallery",
+        index: 0
+      });
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: main.PickImageSource.prototype,
+        [_name$0]: "PickImageSource.camera",
+        index: 1
+      });
+    },
+    get C213() {
+      return C[213] = dart.constList([C[211] || CT.C211, C[212] || CT.C212, C[160] || CT.C160], T.PickImageSourceL());
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 8,
+        [_Location_file]: "file:///C:/Users/Igor/Desktop/helptonic-mobile/helptonic-mobile/lib/main.dart"
+      });
+    }
+  }, false);
+  var C = Array(215).fill(void 0);
+  var I = [
+    "package:flutter_ftt/view/widget/side_bar.dart",
+    "package:flutter_ftt/aws_s3/image_picker/add_attachment_sheet.dart",
+    "package:flutter_ftt/aws_s3/image_picker/single_image_picker.dart",
+    "package:flutter_ftt/main.dart",
+    "package:flutter_ftt/view/page/first_page.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  side_bar.SideDrawer = class SideDrawer extends framework.StatelessWidget {
+    build(context) {
+      return new drawer.Drawer.new({child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new drawer_header.DrawerHeader.new({child: new basic.Center.new({child: new image.Image.asset("assets/logoperfil.png", {scale: 5.0, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), decoration: new box_decoration.BoxDecoration.new({color: new ui.Color.new(4289396736)}), $creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), new visibility.Visibility.new({visible: user_const.UserConst.disconnected, child: new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.credit_card, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[11] || CT.C11}), title: new text$.Text.new("Login", {style: google_fonts.GoogleFonts.coda({color: colors.Colors.black, fontSize: 15.0}), $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), onTap: dart.fn(() => {
+                  let future = navigator.Navigator.push(T.LoginL(), context, new (T.MaterialPageRouteOfLoginL()).new({builder: dart.fn(context => new login_page.LoginScreen.new({$creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), T.BuildContextLToLoginScreenL())}));
+                  future.then(core.Null, dart.fn(loginofuser => {
+                    navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new main.AppCore.new({$creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), T.BuildContextLToAppCoreL())}));
+                  }, T.LoginLToNull()));
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), $creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), new visibility.Visibility.new({visible: user_const.UserConst.disconnected, child: new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.credit_card, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), title: new text$.Text.new("Registrar", {style: google_fonts.GoogleFonts.coda({color: colors.Colors.black, fontSize: 15.0}), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), onTap: dart.fn(() => {
+                  let future = navigator.Navigator.push(T.RegisterL(), context, new (T.MaterialPageRouteOfRegisterL()).new({builder: dart.fn(context => new register_page.RegisterScreen.new({$creationLocationd_0dea112b090073317d4: C[39] || CT.C39}), T.BuildContextLToRegisterScreenL())}));
+                  future.then(core.Null, dart.fn(registerofuser => {
+                    navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new main.AppCore.new({$creationLocationd_0dea112b090073317d4: C[40] || CT.C40}), T.BuildContextLToAppCoreL())}));
+                  }, T.RegisterLToNull()));
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), $creationLocationd_0dea112b090073317d4: C[46] || CT.C46}), new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.email, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[50] || CT.C50}), title: new text$.Text.new("Email: " + dart.notNull(user_const.UserConst.email), {$creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[57] || CT.C57}), new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.accessibility, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[61] || CT.C61}), title: new text$.Text.new("Nome: " + dart.notNull(user_const.UserConst.name_), {$creationLocationd_0dea112b090073317d4: C[65] || CT.C65}), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68}), new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.adjust, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[72] || CT.C72}), title: new text$.Text.new("Tipo: " + dart.notNull(user_const.UserConst.typeBlindess), {$creationLocationd_0dea112b090073317d4: C[76] || CT.C76}), $creationLocationd_0dea112b090073317d4: C[79] || CT.C79}), new visibility.Visibility.new({visible: user_const.UserConst.connected, child: new list_tile.ListTile.new({leading: new icon.Icon.new(icons.Icons.exit_to_app, {color: colors.Colors.black, $creationLocationd_0dea112b090073317d4: C[83] || CT.C83}), title: new text$.Text.new("Logout", {$creationLocationd_0dea112b090073317d4: C[87] || CT.C87}), onTap: dart.fn(() => {
+                  user_const.UserConst.id = "";
+                  user_const.UserConst.email = "";
+                  user_const.UserConst.name_ = "";
+                  user_const.UserConst.typeBlindess = "";
+                  user_const.UserConst.token = "";
+                  user_const.UserConst.disconnected = true;
+                  user_const.UserConst.imageCarousel = false;
+                  user_const.UserConst.connected = false;
+                  navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new main.AppCore.new({$creationLocationd_0dea112b090073317d4: C[90] || CT.C90}), T.BuildContextLToAppCoreL())}));
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[91] || CT.C91}), $creationLocationd_0dea112b090073317d4: C[96] || CT.C96})]), $creationLocationd_0dea112b090073317d4: C[100] || CT.C100}), $creationLocationd_0dea112b090073317d4: C[103] || CT.C103});
+    }
+  };
+  (side_bar.SideDrawer.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    side_bar.SideDrawer.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = side_bar.SideDrawer.prototype;
+  dart.addTypeTests(side_bar.SideDrawer);
+  dart.addTypeCaches(side_bar.SideDrawer);
+  dart.setMethodSignature(side_bar.SideDrawer, () => ({
+    __proto__: dart.getMethods(side_bar.SideDrawer.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(side_bar.SideDrawer, I[0]);
+  var screenSize$ = dart.privateName(add_attachment_sheet, "AddAttachmentModalSheet.screenSize");
+  var source = dart.privateName(add_attachment_sheet, "AddAttachmentModalSheet.source");
+  add_attachment_sheet.AddAttachmentModalSheet = class AddAttachmentModalSheet extends framework.StatefulWidget {
+    get screenSize() {
+      return this[screenSize$];
+    }
+    set screenSize(value) {
+      super.screenSize = value;
+    }
+    get source() {
+      return this[source];
+    }
+    set source(value) {
+      this[source] = value;
+    }
+    createState() {
+      return new add_attachment_sheet._AddAttachmentModalSheetState.new();
+    }
+  };
+  (add_attachment_sheet.AddAttachmentModalSheet.new = function(screenSize, opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[source] = single_image_picker.Source.NONE;
+    this[screenSize$] = screenSize;
+    add_attachment_sheet.AddAttachmentModalSheet.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = add_attachment_sheet.AddAttachmentModalSheet.prototype;
+  dart.addTypeTests(add_attachment_sheet.AddAttachmentModalSheet);
+  dart.addTypeCaches(add_attachment_sheet.AddAttachmentModalSheet);
+  dart.setMethodSignature(add_attachment_sheet.AddAttachmentModalSheet, () => ({
+    __proto__: dart.getMethods(add_attachment_sheet.AddAttachmentModalSheet.__proto__),
+    createState: dart.fnType(dart.legacy(add_attachment_sheet._AddAttachmentModalSheetState), [])
+  }));
+  dart.setLibraryUri(add_attachment_sheet.AddAttachmentModalSheet, I[1]);
+  dart.setFieldSignature(add_attachment_sheet.AddAttachmentModalSheet, () => ({
+    __proto__: dart.getFields(add_attachment_sheet.AddAttachmentModalSheet.__proto__),
+    screenSize: dart.finalFieldType(dart.legacy(ui.Size)),
+    source: dart.fieldType(dart.legacy(single_image_picker.Source))
+  }));
+  var _buildHeading = dart.privateName(add_attachment_sheet, "_buildHeading");
+  var _buildCloseButton = dart.privateName(add_attachment_sheet, "_buildCloseButton");
+  var _onPickFromCameraClicked = dart.privateName(add_attachment_sheet, "_onPickFromCameraClicked");
+  var _buildOption = dart.privateName(add_attachment_sheet, "_buildOption");
+  var _onAddPhotoClicked = dart.privateName(add_attachment_sheet, "_onAddPhotoClicked");
+  add_attachment_sheet._AddAttachmentModalSheetState = class _AddAttachmentModalSheetState extends framework.State$(dart.legacy(add_attachment_sheet.AddAttachmentModalSheet)) {
+    [_buildHeading](text) {
+      return new text$.Text.new(text, {style: new text_style.TextStyle.new({fontSize: 26.0, color: colors.Colors.black}), $creationLocationd_0dea112b090073317d4: C[106] || CT.C106});
+    }
+    [_buildCloseButton](context) {
+      return new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+          navigator.Navigator.pop(T.ObjectL(), framework.BuildContext.as(context));
+        }, T.VoidToNull()), child: new icon.Icon.new(material_icons.MaterialIcons.close, {$creationLocationd_0dea112b090073317d4: C[110] || CT.C110}), $creationLocationd_0dea112b090073317d4: C[113] || CT.C113});
+    }
+    build(context) {
+      return new container.Container.new({height: 300.0, child: new container.Container.new({margin: new edge_insets.EdgeInsets.symmetric({vertical: 16.0, horizontal: 16.0}), child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceBetween, children: T.JSArrayOfWidgetL().of([T.WidgetL().as(this[_buildHeading]("Upload")), T.WidgetL().as(this[_buildCloseButton](context))]), $creationLocationd_0dea112b090073317d4: C[117] || CT.C117}), new basic.SizedBox.new({height: 16.0, $creationLocationd_0dea112b090073317d4: C[121] || CT.C121}), T.WidgetL().as(this[_buildOption](font_awesome.FontAwesome.camera, "Camera", dart.fn(() => this[_onPickFromCameraClicked](context), T.VoidTodynamic()))), T.WidgetL().as(this[_buildOption](material_icons.MaterialIcons.photo_library, "Photo library", dart.fn(() => this[_onAddPhotoClicked](context), T.VoidTodynamic())))]), $creationLocationd_0dea112b090073317d4: C[124] || CT.C124}), $creationLocationd_0dea112b090073317d4: C[127] || CT.C127}), $creationLocationd_0dea112b090073317d4: C[131] || CT.C131});
+    }
+    [_buildOption](optionIcon, optionName, onItemClicked) {
+      return new gesture_detector.GestureDetector.new({onTap: T.VoidToNvoid().as(onItemClicked), child: new container.Container.new({padding: new edge_insets.EdgeInsets.symmetric({vertical: 12.0}), child: new basic.Row.new({children: T.JSArrayOfWidgetL().of([new icon.Icon.new(optionIcon, {$creationLocationd_0dea112b090073317d4: C[135] || CT.C135}), new basic.SizedBox.new({width: 8.0, $creationLocationd_0dea112b090073317d4: C[138] || CT.C138}), new text$.Text.new(optionName, {style: new text_style.TextStyle.new({color: colors.Colors.black, fontSize: 18.0}), $creationLocationd_0dea112b090073317d4: C[141] || CT.C141})]), $creationLocationd_0dea112b090073317d4: C[145] || CT.C145}), $creationLocationd_0dea112b090073317d4: C[148] || CT.C148}), $creationLocationd_0dea112b090073317d4: C[152] || CT.C152});
+    }
+    [_onAddPhotoClicked](context) {
+      return async.async(dart.dynamic, (function* _onAddPhotoClicked() {
+        let getPermission = new get_image_permission.GetImagePermission.gallery();
+        yield getPermission.getPermission(context);
+        if (dart.test(getPermission.granted)) {
+          this.widget.source = single_image_picker.Source.GALLERY;
+          navigator.Navigator.pop(T.ObjectL(), framework.BuildContext.as(context));
+        }
+      }).bind(this));
+    }
+    [_onPickFromCameraClicked](context) {
+      return async.async(dart.dynamic, (function* _onPickFromCameraClicked() {
+        let getPermission = new get_image_permission.GetImagePermission.camera();
+        yield getPermission.getPermission(context);
+        if (dart.test(getPermission.granted)) {
+          this.widget.source = single_image_picker.Source.CAMERA;
+          navigator.Navigator.pop(T.ObjectL(), framework.BuildContext.as(context));
+        }
+      }).bind(this));
+    }
+  };
+  (add_attachment_sheet._AddAttachmentModalSheetState.new = function() {
+    add_attachment_sheet._AddAttachmentModalSheetState.__proto__.new.call(this);
+    ;
+  }).prototype = add_attachment_sheet._AddAttachmentModalSheetState.prototype;
+  dart.addTypeTests(add_attachment_sheet._AddAttachmentModalSheetState);
+  dart.addTypeCaches(add_attachment_sheet._AddAttachmentModalSheetState);
+  dart.setMethodSignature(add_attachment_sheet._AddAttachmentModalSheetState, () => ({
+    __proto__: dart.getMethods(add_attachment_sheet._AddAttachmentModalSheetState.__proto__),
+    [_buildHeading]: dart.fnType(dart.dynamic, [dart.legacy(core.String)]),
+    [_buildCloseButton]: dart.fnType(dart.dynamic, [dart.dynamic]),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)]),
+    [_buildOption]: dart.fnType(dart.dynamic, [dart.legacy(icon_data.IconData), dart.legacy(core.String), dart.legacy(core.Function)]),
+    [_onAddPhotoClicked]: dart.fnType(dart.dynamic, [dart.dynamic]),
+    [_onPickFromCameraClicked]: dart.fnType(dart.dynamic, [dart.dynamic])
+  }));
+  dart.setLibraryUri(add_attachment_sheet._AddAttachmentModalSheetState, I[1]);
+  var _name$ = dart.privateName(single_image_picker, "_name");
+  single_image_picker.Source = class Source extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (single_image_picker.Source.new = function(index, _name) {
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = single_image_picker.Source.prototype;
+  dart.addTypeTests(single_image_picker.Source);
+  dart.addTypeCaches(single_image_picker.Source);
+  dart.setMethodSignature(single_image_picker.Source, () => ({
+    __proto__: dart.getMethods(single_image_picker.Source.__proto__),
+    toString: dart.fnType(dart.legacy(core.String), []),
+    [$toString]: dart.fnType(dart.legacy(core.String), [])
+  }));
+  dart.setLibraryUri(single_image_picker.Source, I[2]);
+  dart.setFieldSignature(single_image_picker.Source, () => ({
+    __proto__: dart.getFields(single_image_picker.Source.__proto__),
+    index: dart.finalFieldType(dart.legacy(core.int)),
+    [_name$]: dart.finalFieldType(dart.legacy(core.String))
+  }));
+  dart.defineExtensionMethods(single_image_picker.Source, ['toString']);
+  single_image_picker.Source.GALLERY = C[156] || CT.C156;
+  single_image_picker.Source.CAMERA = C[157] || CT.C157;
+  single_image_picker.Source.NONE = C[158] || CT.C158;
+  single_image_picker.Source.values = C[159] || CT.C159;
+  var pickImageSource$ = dart.privateName(single_image_picker, "SingleImagePicker.pickImageSource");
+  var onImagePicked$ = dart.privateName(single_image_picker, "SingleImagePicker.onImagePicked");
+  var onImageSuccessfullySaved$ = dart.privateName(single_image_picker, "SingleImagePicker.onImageSuccessfullySaved");
+  var onSaveImage$ = dart.privateName(single_image_picker, "SingleImagePicker.onSaveImage");
+  var onImageUploadFailed$ = dart.privateName(single_image_picker, "SingleImagePicker.onImageUploadFailed");
+  var imagePicker = dart.privateName(single_image_picker, "SingleImagePicker.imagePicker");
+  var _name$0 = dart.privateName(main, "_name");
+  single_image_picker.SingleImagePicker = class SingleImagePicker extends core.Object {
+    get pickImageSource() {
+      return this[pickImageSource$];
+    }
+    set pickImageSource(value) {
+      super.pickImageSource = value;
+    }
+    get onImagePicked() {
+      return this[onImagePicked$];
+    }
+    set onImagePicked(value) {
+      super.onImagePicked = value;
+    }
+    get onImageSuccessfullySaved() {
+      return this[onImageSuccessfullySaved$];
+    }
+    set onImageSuccessfullySaved(value) {
+      super.onImageSuccessfullySaved = value;
+    }
+    get onSaveImage() {
+      return this[onSaveImage$];
+    }
+    set onSaveImage(value) {
+      super.onSaveImage = value;
+    }
+    get onImageUploadFailed() {
+      return this[onImageUploadFailed$];
+    }
+    set onImageUploadFailed(value) {
+      super.onImageUploadFailed = value;
+    }
+    get imagePicker() {
+      return this[imagePicker];
+    }
+    set imagePicker(value) {
+      super.imagePicker = value;
+    }
+    pickImage(context) {
+      return async.async(dart.void, (function* pickImage() {
+        let t0;
+        try {
+          let imageSource = null;
+          if (this.pickImageSource == main.PickImageSource.both) {
+            let size = media_query.MediaQuery.of(framework.BuildContext.as(context)).size;
+            let sheet = new add_attachment_sheet.AddAttachmentModalSheet.new(size, {$creationLocationd_0dea112b090073317d4: C[161] || CT.C161});
+            yield bottom_sheet.showModalBottomSheet(dart.dynamic, {context: framework.BuildContext.as(context), builder: dart.fn(context => sheet, T.BuildContextLToAddAttachmentModalSheetL()), isScrollControlled: true});
+            if (sheet.source == single_image_picker.Source.CAMERA) {
+              imageSource = image_source.ImageSource.camera;
+            } else if (sheet.source == single_image_picker.Source.GALLERY) {
+              imageSource = image_source.ImageSource.gallery;
+            } else {
+              return;
+            }
+          } else if (this.pickImageSource == main.PickImageSource.camera) {
+            imageSource = image_source.ImageSource.camera;
+            let getPermission = new get_image_permission.GetImagePermission.camera();
+            yield getPermission.getPermission(context);
+            if (getPermission.granted === false) {
+              return;
+            }
+          } else if (this.pickImageSource == main.PickImageSource.gallery) {
+            imageSource = image_source.ImageSource.gallery;
+            let getPermission = new get_image_permission.GetImagePermission.gallery();
+            yield getPermission.getPermission(context);
+            if (getPermission.granted === false) {
+              return;
+            }
+          } else {
+            return;
+          }
+          let image = (yield this.imagePicker.getImage({source: imageSource}));
+          let uploadFile = new upload_files.UploadFile.new();
+          let urlImage = (yield uploadFile.call(image));
+          if (urlImage[$isNotEmpty]) {
+            user_const.UserConst.imageList[$add](urlImage);
+            user_const.UserConst.imageList = user_const.UserConst.imageList[$reversed][$toList]();
+            t0 = uploadFile.downloadUrl;
+            this.onImageSuccessfullySaved(t0);
+          } else {
+            dart.throw("Failed to save image");
+          }
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          dart.throw("Erro no request");
+        }
+      }).bind(this));
+    }
+  };
+  (single_image_picker.SingleImagePicker.new = function(opts) {
+    let pickImageSource = opts && 'pickImageSource' in opts ? opts.pickImageSource : C[160] || CT.C160;
+    let onImagePicked = opts && 'onImagePicked' in opts ? opts.onImagePicked : null;
+    let onSaveImage = opts && 'onSaveImage' in opts ? opts.onSaveImage : null;
+    let onImageSuccessfullySaved = opts && 'onImageSuccessfullySaved' in opts ? opts.onImageSuccessfullySaved : null;
+    let onImageUploadFailed = opts && 'onImageUploadFailed' in opts ? opts.onImageUploadFailed : null;
+    this[imagePicker] = new image_picker.ImagePicker.new();
+    this[pickImageSource$] = pickImageSource;
+    this[onImagePicked$] = onImagePicked;
+    this[onSaveImage$] = onSaveImage;
+    this[onImageSuccessfullySaved$] = onImageSuccessfullySaved;
+    this[onImageUploadFailed$] = onImageUploadFailed;
+    ;
+  }).prototype = single_image_picker.SingleImagePicker.prototype;
+  dart.addTypeTests(single_image_picker.SingleImagePicker);
+  dart.addTypeCaches(single_image_picker.SingleImagePicker);
+  dart.setMethodSignature(single_image_picker.SingleImagePicker, () => ({
+    __proto__: dart.getMethods(single_image_picker.SingleImagePicker.__proto__),
+    pickImage: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.dynamic])
+  }));
+  dart.setLibraryUri(single_image_picker.SingleImagePicker, I[2]);
+  dart.setFieldSignature(single_image_picker.SingleImagePicker, () => ({
+    __proto__: dart.getFields(single_image_picker.SingleImagePicker.__proto__),
+    pickImageSource: dart.finalFieldType(dart.legacy(main.PickImageSource)),
+    onImagePicked: dart.finalFieldType(dart.legacy(dart.fnType(dart.dynamic, [dart.legacy(core.String)]))),
+    onImageSuccessfullySaved: dart.finalFieldType(dart.legacy(dart.fnType(dart.dynamic, [dart.legacy(core.String)]))),
+    onSaveImage: dart.finalFieldType(dart.legacy(dart.fnType(dart.legacy(async.Future$(dart.legacy(core.bool))), [dart.legacy(core.String)]))),
+    onImageUploadFailed: dart.finalFieldType(dart.legacy(dart.fnType(dart.dynamic, [dart.legacy(core.String)]))),
+    imagePicker: dart.finalFieldType(dart.legacy(image_picker.ImagePicker))
+  }));
+  var source$ = dart.privateName(first_page, "FirstPageState.source");
+  var update = dart.privateName(first_page, "FirstPageState.update");
+  main.AppCore = class AppCore extends framework.StatefulWidget {
+    createState() {
+      return new first_page.FirstPageState.new();
+    }
+  };
+  (main.AppCore.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    main.AppCore.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = main.AppCore.prototype;
+  dart.addTypeTests(main.AppCore);
+  dart.addTypeCaches(main.AppCore);
+  dart.setMethodSignature(main.AppCore, () => ({
+    __proto__: dart.getMethods(main.AppCore.__proto__),
+    createState: dart.fnType(dart.legacy(framework.State$(dart.legacy(framework.StatefulWidget))), [])
+  }));
+  dart.setLibraryUri(main.AppCore, I[3]);
+  first_page.FirstPageState = class FirstPageState extends framework.State$(dart.legacy(main.AppCore)) {
+    get source() {
+      return this[source$];
+    }
+    set source(value) {
+      this[source$] = value;
+    }
+    get update() {
+      return this[update];
+    }
+    set update(value) {
+      this[update] = value;
+    }
+    build(context) {
+      this.setState(dart.fn(() => {
+      }, T.VoidToNull()));
+      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, home: new scaffold.Scaffold.new({drawer: new side_bar.SideDrawer.new({$creationLocationd_0dea112b090073317d4: C[164] || CT.C164}), backgroundColor: new ui.Color.new(4294769916), appBar: main_app_bar.buildMainAppBar(), body: new container.Container.new({child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([single_child.buildSingleChildScrollView(context), new basic.SizedBox.new({height: 14.0, $creationLocationd_0dea112b090073317d4: C[165] || CT.C165}), new visibility.Visibility.new({child: new text$.Text.new("Novas fotos podem ser adicionadas", {style: google_fonts.GoogleFonts.coda({fontSize: 18.0, color: colors.Colors.black}), textAlign: ui.TextAlign.left, $creationLocationd_0dea112b090073317d4: C[168] || CT.C168}), visible: user_const.UserConst.imageCarousel, $creationLocationd_0dea112b090073317d4: C[173] || CT.C173}), new basic.SizedBox.new({height: 8.0, $creationLocationd_0dea112b090073317d4: C[177] || CT.C177}), new visibility.Visibility.new({visible: user_const.UserConst.imageCarousel, child: new container.Container.new({child: new elevated_button.ElevatedButton.new({style: elevated_button.ElevatedButton.styleFrom({primary: colors.Colors.red}), onPressed: dart.fn(() => async.async(core.Null, function*() {
+                        let singleImagePicker = new single_image_picker.SingleImagePicker.new({pickImageSource: main.PickImageSource.both, onImagePicked: dart.fn(path => {
+                          }, T.StringLToNull()), onSaveImage: dart.fn(url => async.async(core.Null, function*() {
+                          }), T.StringLToFutureLOfNull()), onImageSuccessfullySaved: dart.fn(url => {
+                          }, T.StringLToNull()), onImageUploadFailed: dart.fn(message => {
+                          }, T.StringLToNull())});
+                        singleImagePicker.pickImage(context);
+                      }), T.VoidToFutureLOfNull()), child: new text$.Text.new("Adicionar imagem", {$creationLocationd_0dea112b090073317d4: C[180] || CT.C180}), $creationLocationd_0dea112b090073317d4: C[183] || CT.C183}), $creationLocationd_0dea112b090073317d4: C[188] || CT.C188}), $creationLocationd_0dea112b090073317d4: C[191] || CT.C191})]), $creationLocationd_0dea112b090073317d4: C[195] || CT.C195}), $creationLocationd_0dea112b090073317d4: C[198] || CT.C198}), $creationLocationd_0dea112b090073317d4: C[201] || CT.C201}), $creationLocationd_0dea112b090073317d4: C[207] || CT.C207});
+    }
+  };
+  (first_page.FirstPageState.new = function() {
+    this[source$] = null;
+    this[update] = null;
+    first_page.FirstPageState.__proto__.new.call(this);
+    ;
+  }).prototype = first_page.FirstPageState.prototype;
+  dart.addTypeTests(first_page.FirstPageState);
+  dart.addTypeCaches(first_page.FirstPageState);
+  dart.setMethodSignature(first_page.FirstPageState, () => ({
+    __proto__: dart.getMethods(first_page.FirstPageState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(first_page.FirstPageState, I[4]);
+  dart.setFieldSignature(first_page.FirstPageState, () => ({
+    __proto__: dart.getFields(first_page.FirstPageState.__proto__),
+    source: dart.fieldType(dart.legacy(core.String)),
+    update: dart.fieldType(dart.legacy(core.bool))
+  }));
+  main.PickImageSource = class PickImageSource extends core.Object {
+    toString() {
+      return this[_name$0];
+    }
+  };
+  (main.PickImageSource.new = function(index, _name) {
+    this.index = index;
+    this[_name$0] = _name;
+    ;
+  }).prototype = main.PickImageSource.prototype;
+  dart.addTypeTests(main.PickImageSource);
+  dart.addTypeCaches(main.PickImageSource);
+  dart.setMethodSignature(main.PickImageSource, () => ({
+    __proto__: dart.getMethods(main.PickImageSource.__proto__),
+    toString: dart.fnType(dart.legacy(core.String), []),
+    [$toString]: dart.fnType(dart.legacy(core.String), [])
+  }));
+  dart.setLibraryUri(main.PickImageSource, I[3]);
+  dart.setFieldSignature(main.PickImageSource, () => ({
+    __proto__: dart.getFields(main.PickImageSource.__proto__),
+    index: dart.finalFieldType(dart.legacy(core.int)),
+    [_name$0]: dart.finalFieldType(dart.legacy(core.String))
+  }));
+  dart.defineExtensionMethods(main.PickImageSource, ['toString']);
+  main.PickImageSource.gallery = C[211] || CT.C211;
+  main.PickImageSource.camera = C[212] || CT.C212;
+  main.PickImageSource.both = C[160] || CT.C160;
+  main.PickImageSource.values = C[213] || CT.C213;
+  main.main = function main$() {
+    return binding.runApp(new main.AppCore.new({$creationLocationd_0dea112b090073317d4: C[214] || CT.C214}));
+  };
+  dart.trackLibraries("packages/flutter_ftt/view/widget/side_bar.dart", {
+    "package:flutter_ftt/view/widget/side_bar.dart": side_bar,
+    "package:flutter_ftt/aws_s3/image_picker/add_attachment_sheet.dart": add_attachment_sheet,
+    "package:flutter_ftt/aws_s3/image_picker/single_image_picker.dart": single_image_picker,
+    "package:flutter_ftt/view/page/first_page.dart": first_page,
+    "package:flutter_ftt/main.dart": main
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["side_bar.dart","../../aws_s3/image_picker/add_attachment_sheet.dart","../../aws_s3/image_picker/single_image_picker.dart","../../main.dart","../page/first_page.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAY4B;AACxB,YAAO,+BACE,gCACa,yBAChB,2CACS,6BACQ,sBAAM,iCAAgC,mIAEzC,6CACH,iBAAM,wEAGjB,wCACuB,0CACZ,qCACI,kBACD,iCACQ,uFAET,mBAAK,iBACW,sCAAmB,+BAAiB,0EACpD;AACe,+BAAmB,qCAAK,OAAO,EAC/C,kDAA2B,QAAC,WACvB;AAOP,kBALF,AAAO,MAAD,iBAAM,QAAC;AAIR,oBAHO,uCAAK,OAAO,EAClB,yCAA2B,QAAC,WACvB;;0JAKnB,wCACuB,0CACZ,qCACI,kBACD,iCACQ,uFAET,mBAAK,qBACW,sCAAmB,+BAAiB,0EACpD;AACkB,+BAAmB,wCAAK,OAAO,EAClD,qDAA2B,QAAC,WACvB;AAOP,kBALF,AAAO,MAAD,iBAAM,QAAC;AAIR,oBAHO,uCAAK,OAAO,EAClB,yCAA2B,QAAC,WACvB;;0JAKnB,qCACW,kBACD,2BACQ,uFAET,mBAAK,AAAU,yBAAY,oJAEpC,qCACW,kBACD,mCACQ,uFAET,mBAAK,AAAS,wBAAY,oJAEnC,qCACW,kBACD,4BACQ,uFAET,mBAAK,AAAS,wBAAY,2JAEnC,wCACuB,uCACZ,qCACM,kBACD,iCACQ,uFAET,mBAAK,6EACL;AACY,kBAAP,0BAAK;AACK,kBAAV,6BAAQ;AACC,kBAAT,6BAAO;AACU,kBAAjB,oCAAe;AACL,kBAAV,6BAAQ;AACW,kBAAnB,oCAAe;AACM,kBAArB,qCAAgB;AACC,kBAAjB,iCAAY;AAInB,kBAFO,uCAAK,OAAO,EAAE,yCAA2B,QAAC,WAC3C;;IAM3B;;;;;;EACF;;;;;;;;;;;IC1Ga;;;;;;IACJ;;;;;;;AAMH;IAA+B;;+DAJN;;IAFtB,eAAgB;IAEM;AAA7B;;EAAwC;;;;;;;;;;;;;;;;;;;oBAQnB;AACnB,YAAO,oBAAK,IAAI,UAAS,wCAAoB,aAAkB;IACjE;wBAEkB;AAChB,YAAO,kDACE;AACiB,UAAZ,+DAAI,OAAO;mCAEhB,kBAAmB;IAE9B;UAG0B;AACxB,YAAO,sCACG,cACD,qCACc,gDAAoB,kBAAgB,eAChD,gCACa,yBAChB,sCACuC,+CACnB,wCAChB,oBAAc,2BACd,wBAAkB,OAAO,mEAG7B,gCAAiB,kFACjB,mBAAyB,iCAAQ,UAC7B,cAAM,+BAAyB,OAAO,wCAC1C,mBAA2B,4CAAe,iBACtC,cAAM,yBAAmB,OAAO;IAK9C;mBAEsB,YAAmB,YAAqB;AAC5D,YAAO,qEACE,aAAa,UACb,sCACe,gDAAoB,eACjC,6BACa,yBAChB,kBAAK,UAAU,gEACf,+BAAgB,kEAChB,mBACE,UAAU,UACH,qCAAwB,+BAAiB;IAM5D;yBAEmB;AAAD;AACG,4BAAmC;AACZ,QAA1C,MAAM,AAAc,aAAD,eAAe,OAAO;AAEzC,sBAAI,AAAc,aAAD;AACe,UAA9B,AAAO,qBAAgB;AACD,UAAZ,+DAAI,OAAO;;MAEzB;;+BAEyB;AAAD;AACH,4BAAmC;AACZ,QAA1C,MAAM,AAAc,aAAD,eAAe,OAAO;AAEzC,sBAAI,AAAc,aAAD;AACc,UAA7B,AAAO,qBAAgB;AACD,UAAZ,+DAAI,OAAO;;MAEzB;;;;;;EACF;;;;;;;;;;;;;;;;;ICpFoC;;oDAA/B;;;;EAA+B;;;;;;;;;;;;;;;;;;;;;;;;;;;IAGZ;;;;;;IACM;;;;;;IACO;;;;;;IACjB;;;;;;IACa;;;;;;IAUb;;;;;;cAEK;AAAD;;AACpB;AACc;AAEZ,cAAI,AAAgB,wBAAmB;AAChC,uBAAkB,AAAY,oDAAT,OAAO;AAC7B,wBAAQ,qDAAwB,IAAI;AAKvC,YAJD,MAAM,oFACK,OAAO,YACP,QAAC,WAAY,KAAK,oEACP;AAGtB,gBAAI,AAAM,AAAO,KAAR,WAAkB;AACO,cAAhC,cAA0B;kBACrB,KAAI,AAAM,AAAO,KAAR,WAAkB;AACC,cAAjC,cAA0B;;AAE1B;;gBAEG,KAAI,AAAgB,wBAAmB;AACZ,YAAhC,cAA0B;AAEP,gCAAmC;AACZ,YAA1C,MAAM,AAAc,aAAD,eAAe,OAAO;AAEzC,gBAAI,AAAc,AAAQ,aAAT,aAAY;AAC3B;;gBAEG,KAAI,AAAgB,wBAAmB;AACX,YAAjC,cAA0B;AAEP,gCAAmC;AACZ,YAA1C,MAAM,AAAc,aAAD,eAAe,OAAO;AAEzC,gBAAI,AAAc,AAAQ,aAAT,aAAY;AAC3B;;;AAGF;;AAGS,uBAAQ,MAAM,AAAY,mCAAiB,WAAW;AAEtD,2BAAa;AACjB,0BAAW,MAAM,AAAW,UAAD,MAAM,KAAK;AAE7C,cAAI,AAAS,QAAD;AACuB,YAAvB,AAAU,qCAAI,QAAQ;AAC2B,YAAjD,iCAAsB,AAAU,AAAS;AACH,iBAAvB,AAAW,UAAD;YAAnC,AAAwB;;AAEI,YAA5B,WAAM;;;cAED;AACkB,UAAzB,WAAO;;MAEX;;;;QAlEO;QACU;QACA;QACA;QACA;IAGC,oBAAc;IAPzB;IACU;IACA;IACA;IACA;;EACf;;;;;;;;;;;;;;;;;;;;;ACjBqC;IAAgB;;;;;;EACzD;;;;;;;;;ICCS;;;;;;IACF;;;;;;UAIqB;AAET,MAAf,cAAS;;AAET,YAAO,sDACyB,aACtB,mCACM,2GACS,iBAAM,qBACf,sCACF,oCACG,gCACK,yBACR,wCAA2B,OAAO,GAClC,gCAAiB,mEACjB,sCAAkB,mBAAK,6CACJ,yCAAe,aAAkB,kCAA6B,yFAC9D,iGACnB,gCAAiB,kEACjB,wCACqB,2CACZ,oCACI,+CACe,mDACJ,gCAET;AACe,gDACpB,gEAC+B,0CAClB,QAAC;8DAEH,QAAQ;0BACpB,2DACyB,QAAC;sEAEN,QAAC;;AAGY,wBAApC,AAAkB,iBAAD,WAAW,OAAO;sBACpC,qCACM,mBAAK;IAMhC;;;IApDO;IACF;;;EAoDP;;;;;;;;;;;;;;;;ID7D6C;;8CAAxC;;;;EAAwC;;;;;;;;;;;;;;;;;;;;AAE9B,0BAAO;EAAU","file":"../../../../../../../../packages/flutter_ftt/view/widget/side_bar.dart.lib.js"}');
+  // Exports:
+  return {
+    view__widget__side_bar: side_bar,
+    aws_s3__image_picker__add_attachment_sheet: add_attachment_sheet,
+    aws_s3__image_picker__single_image_picker: single_image_picker,
+    view__page__first_page: first_page,
+    main: main
+  };
+}));
+
+//# sourceMappingURL=side_bar.dart.lib.js.map

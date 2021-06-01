@@ -29,7 +29,7 @@ class FirstPageState extends State<AppCore> {
             body: Container(
               child: Column(
                 children: [
-                  buildSingleChildScrollView(update),
+                  buildSingleChildScrollView(context),
                   SizedBox(height: 14),
                   Visibility(child: Text("Novas fotos podem ser adicionadas",
                   style: GoogleFonts.coda(fontSize: 18, color: Colors.black), textAlign: TextAlign.left,),

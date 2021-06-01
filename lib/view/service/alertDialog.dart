@@ -11,6 +11,9 @@ AlertDialog alertDialog(BuildContext context, String message) {
     ),
     actions: <Widget>[
       new ElevatedButton(
+        style: ElevatedButton.styleFrom(
+                          primary: Colors.red,
+                        ),
         onPressed: () {
           Navigator.of(context).pop();
         },

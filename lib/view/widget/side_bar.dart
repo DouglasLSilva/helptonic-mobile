@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ftt/main.dart';
 import 'package:flutter_ftt/model/login.dart';
 import 'package:flutter_ftt/constant/user_const.dart';
+import 'package:flutter_ftt/model/register.dart';
 import 'package:flutter_ftt/view/page/login_page.dart';
 import 'package:flutter_ftt/view/page/register_page.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -53,11 +54,11 @@ class SideDrawer extends StatelessWidget {
                 title: Text('Registrar',
                     style: GoogleFonts.coda(color: Colors.black, fontSize: 15)),
                 onTap: () {
-                  final Future<Login> future = Navigator.push(context,
+                  final Future<Register> future = Navigator.push(context,
                       MaterialPageRoute(builder: (context) {
                     return RegisterScreen();
                   }));
-                  future.then((loginofuser) {
+                  future.then((registerofuser) {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
                       return AppCore();
@@ -86,6 +87,29 @@ class SideDrawer extends StatelessWidget {
             ),
             title: Text('Tipo: ' + UserConst.typeBlindess),
           ),
+          Visibility(
+              visible: UserConst.connected,
+              child: ListTile(
+                  leading: Icon(
+                    Icons.exit_to_app,
+                    color: Colors.black,
+                  ),
+                  title: Text('Logout'),
+                  onTap: () {
+                    UserConst.id = '';
+                    UserConst.email = '';
+                    UserConst.name = '';
+                    UserConst.typeBlindess = '';
+                    UserConst.token = '';
+                    UserConst.disconnected = true;
+                    UserConst.imageCarousel = false;
+                    UserConst.connected = false;
+                    UserConst.imageList.clear();
+
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return AppCore();
+                    }));
+                })),
         ],
       ),
     );

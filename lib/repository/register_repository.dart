@@ -12,9 +12,11 @@ class RegisterRepository implements IApiSheetInterfaceRegister {
   @override
   Future<User> registerUser(Register userData) async {
     try {
-      bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+.[a-zA-Z]+").hasMatch(userData.email);
+      bool emailValid = RegExp(
+              r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+.[a-zA-Z]+")
+          .hasMatch(userData.email);
 
-      if(!emailValid){
+      if (!emailValid) {
         throw "Email em formato invalido";
       }
 
@@ -26,11 +28,17 @@ class RegisterRepository implements IApiSheetInterfaceRegister {
       });
       var responseData = User.fromJson(response.data);
 
-      UserConst.id = responseData.id;
-      UserConst.email = responseData.email;
-      UserConst.name = responseData.name;
-      UserConst.typeBlindess = responseData.typeColorBlindess;
-      UserConst.token = responseData.token;
+      if (response.statusCode == 200) {
+        UserConst.id = responseData.id;
+        UserConst.email = responseData.email;
+        UserConst.name = responseData.name;
+        UserConst.typeBlindess = responseData.typeColorBlindess;
+        UserConst.token = responseData.token;
+        UserConst.disconnected = false;
+        UserConst.imageCarousel = true;
+        UserConst.connected = true;
+        UserConst.imageList.add("https://helptonic.s3.amazonaws.com/d3f8e337-c705-428c-8986-91d7a96b9672.png");
+      }
 
       return responseData;
     } on DioError catch (e) {
